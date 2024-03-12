@@ -1,0 +1,87 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 140, 51, 0.8);
+    padding: 0.5em;
+    margin: 0;
+}
+
+.top-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    color: white;
+}
+
+.top-logo img {
+    width: 60px;
+    height: 50px;
+}
+
+.navigation li {
+    list-style-type: none;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 2em;
+}
+
+.dropdown-options {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+}
+
+
+.navigation-menu:hover .dropdown-options {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.video-container {
+    width: 100%;
+    height: auto;
+    padding: none;
+    margin: none;
+}
+
+.video-container video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.content1 {
+    background-color: white;
+    padding: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    font-size: 2em;
+}
+
