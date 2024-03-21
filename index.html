@@ -29,10 +29,30 @@
         </div>
           <div class="header">
              <img class ="logo" src="logo2.png"><header class="title">Serpent Seeker</header>
+             <p>Explore the world of snakes</p>
         </div>
         </div>
-        <div class="content1">
-            <h1>Welcome to Serpent Seeker</h1>
-            <p>Discover the world of snakes and learn about their habitats, behaviors, and more.</p>
+            <div class="flexbox-container">
+                    <!-- MapBox WebMap -->
+                    <div id='map'></div>
+                <div class="habitat-content">
+                    <h2>Snake Species</h2>
+                    <p>Learn about the different species of snakes</p>
+                </div>
+            </div>
+            
+            <!-- MapBox JavaScript and CSS -->
+            <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+            <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+            
+            <!-- Initialize the map -->
+            <script>
+                mapboxgl.accessToken = "pk.eyJ1IjoiY3liZXJtYXBwZXI5IiwiYSI6ImNsdDRtOTNjbzAwY2EybHF5NTFxbW9vbHYifQ.Nwss38OyYTkjjVCEsvsQPQ";
+                const map = new mapboxgl.Map({
+                    container: 'map',
+                    style: "mapbox://styles/mapbox/outdoors-v12"
+                });
+            </script>
+        </div>
     </body>
 </html>

@@ -69,19 +69,47 @@ body {
     background-color: black;
 }
 
-.content1 {
-    background-color: white;
-    padding: 1em;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 2em;
+}
+
+.header :not(header) {
+    font-size: 0.6em; 
+    margin-top: 0.4em;;
+    font-family: monospace;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2em;
+    background-color:  rgb(255, 140, 51);
+}
+
+.habitat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    padding: 0.5em;;
+    border: 1px solid black;
+    width: 50%;
+}
+
+
+#map {
+    display: block;
+    height: 500px; /* Adjust as needed */
+    width: 50%;
 }
 
