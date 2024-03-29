@@ -9,7 +9,7 @@
         <ul class="navigation">
             <div class="top-logo">
                 <li><img src="logo2.png" alt="Logo"></li>
-                <li class="title">Serpent Seeker</li>
+                <li>Serpent Seeker</li>
             </div>
             <li class="navigation-menu">
                 <a href="#">Menu</a>
@@ -28,16 +28,42 @@
             </video>
         </div>
           <div class="header">
-             <img class ="logo" src="logo2.png"><header class="title">Serpent Seeker</header>
+             <!-- <img class ="logo" src="logo2.png"> -->
+             <header>Serpent Seeker</header>
              <p>Explore the world of snakes</p>
         </div>
         </div>
             <div class="flexbox-container">
                     <!-- MapBox WebMap -->
-                    <div id='map'></div>
-                <div class="habitat-content">
-                    <h2>Snake Species</h2>
-                    <p>Learn about the different species of snakes</p>
+                    <!-- <div class="map-container"> -->
+                        <div  id="map"></div>
+                <div class="world-info">
+                    <div class = "text-background">
+                    <h2 id="world-info-title">Snakes Around The Globe</h2>
+                    <p>Snakes are found on <b>every continent except Antarctica</b>, demonstrating their widespread distribution <em>across the globe.</em> 
+                        In Africa, they inhabit the dense jungles of the Congo Basin, the arid savannas of the Serengeti, and the sandy deserts of the Sahara. 
+                        Across Asia, they slither through the lush rainforests of Southeast Asia, the rugged Himalayan foothills, and the vast expanses of the Siberian taiga. 
+                        In North America, they navigate through the dense forests of the Pacific Northwest, the swamps of the Everglades, and the arid deserts of the Southwest. 
+                        Similarly, in South America, they dwell in the Amazon Rainforest>, the Andean mountain ranges, and the vast plains of the Pampas. Even on islands like Australia, they carve out niches in diverse habitats ranging from dense bushland to arid outback.
+                        Snakes' presence on these continents underscores their remarkable adaptability and evolutionary success across a multitude of environments.</p>
+                    </div>
+                    <a href="navigator.html">
+                        <button id="go-to-map">Go to Map ></button>
+                    </a>
+                </div>
+            </div>
+            <div class="flexbox-container">
+                <div class="activities-box">
+                    <img id="quiz-img" src="quiz.png" alt="Quiz">
+                    <p>Test your knowledge with our snake quiz!</p>
+                    <div class="text-background">
+                        <h1>Activities</h1>
+                    </div>
+                </div>
+                <div class="top-facts-box">
+                    <div class="text-background">
+                        <h1>Top Facts</h1>
+                    </div>
                 </div>
             </div>
             
@@ -53,6 +79,5 @@
                     style: "mapbox://styles/mapbox/outdoors-v12"
                 });
             </script>
-        </div>
     </body>
 </html>
