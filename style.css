@@ -142,6 +142,9 @@ body {
     padding: 0.5em;
 }
 
+
+/* Map styles */
+
 #map {
     position: relative;
     display: block;
@@ -171,8 +174,6 @@ body {
     width: 50vh;
 }
 
-
-
 #map-label h3 {
     margin: 0 0 10px 0;
     font-size: 18px;
@@ -187,6 +188,18 @@ body {
 #map-label li {
     padding: 2px 0;
 }
+
+.popup-content img {
+    width: 150px;
+    height: 100px;
+}
+
+.popup-content p, a {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
 
 .world-info p {
     column-count: 2;
@@ -216,6 +229,7 @@ body {
     background-color: #C7C7A6;
     border: 5px solid #eaffda;
 }
+
 
 
 
