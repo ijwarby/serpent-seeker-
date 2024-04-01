@@ -1,3 +1,15 @@
+
+/* Main Navigation, styles across all pages */
+
+h1 {
+    font-size: 1em; /* This is the base font size */
+}
+
+p {
+    font-size: 1rem; /* rem is relative to the base font size */
+}
+
+
 .navigation {
     display: flex;
     height: 4em;
@@ -24,17 +36,18 @@
     height: 50px;
 }
 
-.navigation li {
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 #logo-link {
     text-decoration: none;
     color: #eaffda;
     font-size: 1em;
 
 }
+
+.navigation li {
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .navigation-menu a {
     text-decoration: underline;
     color: #eaffda;
@@ -50,7 +63,6 @@
     position: absolute;
     left: 0;
 }
-
 
 .navigation-menu:hover .dropdown-options {
     display: block;
@@ -92,6 +104,8 @@ body {
     color: #eaffda;
     font-family: monospace;
 }
+
+/* Main content styles for index.html*/
 
 .flexbox-container {
     display: flex;
@@ -174,13 +188,9 @@ body {
     border: 5px solid #eaffda;
 }
 
-h1 {
-    font-size: 1em; /* This is 2 times the base font size */
-}
 
-p {
-    font-size: 1rem; /* This is the base font size */
-}
+
+/* Media Queries */
 
 @media screen and (max-width: 1000px) {
     
