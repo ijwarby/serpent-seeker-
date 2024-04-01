@@ -1,6 +1,5 @@
 // Sample data for markers
-const markersData = [=9-
-'=/ 
+const markersData = [
     { x: 100, y: 200 },
     { x: 300, y: 100 },
     { x: 450, y: 250 }
