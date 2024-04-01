@@ -36,7 +36,11 @@
             <div class="flexbox-container">
                     <!-- MapBox WebMap -->
                     <!-- <div class="map-container"> -->
-                        <div  id="map"></div>
+                <div id="map">
+                    <div id="map-label">
+                        <p>Explore the map to uncover the snake populations across different regions.</p>
+                    </div>
+                </div>
                 <div class="world-info">
                     <div class = "text-background">
                     <h2 id="world-info-title">Snakes Around The Globe</h2>
@@ -70,17 +74,6 @@
             <!-- MapBox JavaScript and CSS -->
             <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
             <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
-            
-            <!-- Initialize the map -->
-            <script>
-                mapboxgl.accessToken = "pk.eyJ1IjoiY3liZXJtYXBwZXI5IiwiYSI6ImNsdDRtOTNjbzAwY2EybHF5NTFxbW9vbHYifQ.Nwss38OyYTkjjVCEsvsQPQ";
-                const map = new mapboxgl.Map({
-                    container: 'map',
-                    style: 'mapbox://styles/cybermapper9/cluh9p4y4016m01prakl7gwke', 
-                    zoom: 1.5,
-                    maxZoom: 3
-                });
-                
-            </script>
+            <script src="map_script.js"></script>
     </body>
 </html>

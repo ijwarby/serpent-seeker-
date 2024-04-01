@@ -143,9 +143,21 @@ body {
 }
 
 #map {
+    position: relative;
     display: block;
     width: 100%;
+    height: 500px; /* adjust this value as needed */
     border: 5px solid #eaffda;
+}
+
+#map-label {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    border-radius: 3px;
+    z-index: 1000; /* add this line */
 }
 
 #go-to-map {
@@ -157,6 +169,23 @@ body {
     font-style: bold;
     border-radius: 5px;
     width: 50vh;
+}
+
+
+
+#map-label h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+#map-label ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#map-label li {
+    padding: 2px 0;
 }
 
 .world-info p {
@@ -198,9 +227,10 @@ body {
         width: 90%;
     }
 
-    #map {
+    #map-label, #map {
         display: none;
     }
+
 
     .flexbox-container > div {
         flex: 1;
