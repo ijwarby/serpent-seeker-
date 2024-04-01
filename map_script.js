@@ -9,7 +9,7 @@ const map = new mapboxgl.Map({
 const popup = new mapboxgl.Popup({ offset: [0, -15] });
 
 map.on('mousemove', (event) => {
-    const features = map.queryRenderedFeatures(event.point, { layers: ['snake-populations'] });
+    const features = map.queryRenderedFeatures(event.point, { layers: ['snake-locations'] });
     if (!features.length) {
         popup.remove(); // Remove the popup if no features are found
         return;
