@@ -18,8 +18,6 @@ p {
     align-items: center;
     background: #a49966;
     margin: 0;
-    border-radius: 2px;
-    font-size: 1em;
 }
 
 .top-logo {
@@ -48,27 +46,40 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.navigation-menu a {
-    text-decoration: underline;
+.dropbtn {
+    background-color: #363020;
+    font-size: 1em;
+    margin: 1em;
+    padding: 1em;
+    border: none;
     color: #eaffda;
-    background-color: rgb(96, 92, 78);
-    margin:5em;
-    padding: 0.5em;
-    border-radius: 5px;
 }
 
-.dropdown-options {
+.navigation-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
     display: none;
-    list-style-type: none;
-    position: absolute;
+    position: fixed; 
+    width: 20%; 
+    height: 100%;
+    right: 0; 
+    z-index: 1;
+}
+.dropdown-content a {
     left: 0;
+    background-color: rgba(241, 120, 21, 0.918);
+    padding: 1em;
+    margin: 2em;
+    text-decoration: none;
+    display: block;
 }
 
-.navigation-menu:hover .dropdown-options {
+/* This shows the dropdown menu on hover */
+.navigation-menu:hover .dropdown-content {
     display: block;
-    width: 100%;
-    height: 100%;
-    background-color: black;
 }
 
 .video-container {
@@ -160,7 +171,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0.5em;
     border-radius: 3px;
-    z-index: 1000; /* add this line */
+    z-index: 1000; 
 }
 
 #go-to-map {
@@ -275,4 +286,3 @@ body {
         margin: 0;
     }
 }
-
