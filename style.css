@@ -18,6 +18,9 @@ p {
     align-items: center;
     background: #a49966;
     margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .top-logo {
