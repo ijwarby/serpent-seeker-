@@ -4,22 +4,18 @@
         <meta charset="UTF-8">
         <title>Serpent Seeker</title>
         <link rel="stylesheet" href="style.css">
-        <script src="index-script.js" defer></script>
+        <script src="main-script.js" defer></script>
     </head>
     <body>
-        <ul class="navigation">
-            <div class="top-logo">
-                <li><img src="logo2.png" alt="Logo"></li>
-                <li>Serpent Seeker</li>
+        <ul class="navigation-bar">
+            <div class="nav-links">
+                <a href="index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="logo2.png" alt="logo"></a>
+                <div class="right-links">
+                    <a href="map-page.html">Map</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a href="facts.html">Facts</a>
+                </div>
             </div>
-            <li class="navigation-menu">
-                <button class="dropbtn">Menu</button>
-                <ul class="dropdown-content">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </li>
         </ul>
         <div class="video-container">
             <video autoplay loop muted playsinline>
@@ -37,23 +33,30 @@
                     <!-- MapBox WebMap -->
                     <!-- <div class="map-container"> -->
                 <div id="map">
+                    <div class="dropdown"></div>
+                        <button onclick="displayContinents()" id="cont-dropbtn">Explore Continents ></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" id="africa" onclick="africa()">Africa</a>
+                            <a href="#" id="asia" onclick="asia()">Asia</a>
+                            <a href="#" id="europe" onclick="europe()">Europe</a>
+                            <a href="#" id="north-america" onclick="northAmerica()">North America</a>
+                            <a href="#" id="oceania" onclick="oceania()">Oceania</a>
+                            <a href="#" id="south-america" onclick="southAmerica()">South America</a>
+                        </div>
+                    </div>
                     <div id="map-label">
-                        <p>Explore the map to uncover the snake populations across different regions.</p>
+                        <p>Explore the map to uncover the snake species across different regions.</p>
                     </div>
                 </div>
-                <div class="world-info">
-                    <div class = "text-background">
-                    <h2 id="world-info-title">Snakes Around The Globe</h2>
-                    <p>Snakes are found on <b>every continent except Antarctica</b>, demonstrating their widespread distribution <em>across the globe.</em> 
+                    <div class = "information-box">
+                        <h2 id="info-title">Snakes Around The Globe</h2>
+                        <p>Snakes are found on <b>every continent except Antarctica</b>, demonstrating their widespread distribution <em>across the globe.</em> 
                         In Africa, they inhabit the dense jungles of the Congo Basin, the arid savannas of the Serengeti, and the sandy deserts of the Sahara. 
                         Across Asia, they slither through the lush rainforests of Southeast Asia, the rugged Himalayan foothills, and the vast expanses of the Siberian taiga. 
                         In North America, they navigate through the dense forests of the Pacific Northwest, the swamps of the Everglades, and the arid deserts of the Southwest. 
                         Similarly, in South America, they dwell in the Amazon Rainforest>, the Andean mountain ranges, and the vast plains of the Pampas. Even on islands like Australia, they carve out niches in diverse habitats ranging from dense bushland to arid outback.
                         Snakes' presence on these continents underscores their remarkable adaptability and evolutionary success across a multitude of environments.</p>
                     </div>
-                    <a href="map-page.html">
-                        <button id="go-to-map">Go to Map ></button>
-                    </a>
                 </div>
             </div>
             <div class="flexbox-container">
