@@ -1,0 +1,18 @@
+.map-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+#image-map {
+    position: absolute;
+    top: 5em;
+    width: auto;
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+

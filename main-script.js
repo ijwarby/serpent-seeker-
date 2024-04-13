@@ -42,8 +42,7 @@ function changeColor() {
     body.classList.add("default-body");
     color.classList.add("default-color");
 
-  } else {
-    console.log("changing pageName: " + pageName);
+  } else if (pageName !== "index" & pageName !== "map-page" & pageName !== "activities") {
     navBar.classList.remove("default-nav");
     navBar.classList.add(pageName + "-nav");
     header.classList.remove("default-header");
@@ -52,8 +51,8 @@ function changeColor() {
     body.classList.add(pageName + "-body");
     color.classList.remove("default-color");
     color.classList.add(pageName + "-color");
-    console.log("changed pageName: " + pageName);
   }
+
 };
 
 
@@ -78,3 +77,4 @@ areas.forEach(area => {
 $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
 });
+

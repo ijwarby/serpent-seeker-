@@ -25,12 +25,12 @@
 }
 
 .default-body {
-    background-color: #1c1917;
+    background-color:#171a1c;
     padding: 0;
 }
 
 .default-color {
-    background-color: #1c1917;
+    background-color: #171a1c;
     border-bottom: 3px solid #C06D1F;
 }
 
@@ -95,6 +95,7 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     border-radius: 1em;
+    background-color: #171a1c;
 }
 
 
@@ -130,18 +131,6 @@ body {
     /* border-top: 3px solid #C06D1F; */
 }
 
-#intro-title {
-    font-weight: bold;
-    color: white;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-}
-
-.title-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
 .flexbox-container {
     display: flex;
@@ -152,19 +141,17 @@ body {
     width: 70%;
     height: 800px;
     margin: auto;
-    border-radius: 5px;
     justify-content: center;
     align-items: center;
-
     position: relative;
 }
-
 
 /* Map section styles */
 #map {
     flex: 1;
-    width: 70%; /* Or whatever width you want */
+    width: 100%; /* Or whatever width you want */
     height: 100%;
+    margin: auto;
   }
 
 #map-label {
