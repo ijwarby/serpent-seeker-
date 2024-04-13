@@ -13,8 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <ul class="navigation-bar">
+    <body class="default-body">
+        <ul class="nav-bar default-nav">
             <div class="nav-links">
                 <a href="index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="logo2.png" alt="logo"></a>
                 <div class="right-links">
@@ -32,14 +32,14 @@
             </video>
         </div>
 
-        <div class="header">
+        <div class="header default-color">
             <h1>Serpent Seeker</h1>
             <p>Explore the world of snakes</p>
         </div>
 
         
         <section id = "section1">
-            <div class = "intro-container">
+            <div class = "intro-container default-color">
                 <div class="title-container">
                     <h1 id="intro-title">Snakes Around The Globe</h1>
                 </div>
@@ -56,28 +56,29 @@
             </div>
         </section>
     
-        <div class="flexbox-container">
+        <div class="flexbox-container default-color">
         <!-- MapBox WebMap -->
         <!-- <div class="map-container"> -->
-            <div id="map">
-                <button id="scrollButton" class="scroll-button">Learn More  &#11167</button>
-                <div class="dropdown"></div>
-                    <button onclick="displayContinents()" id="cont-dropbtn">Explore Continents &#11167</button>
+            <div id="map"></div>
+                <a href="map-page.html" id="flat-map-link" class="button-style">Go to Flat Continents Map &#x27A7;</a>
+                <div class="dropdown">
+                    <button onclick="displayContinents()" id="cont-dropbtn" class="button-style">Explore Continents &#11167</button>
                     <div id="myDropdown" class="dropdown-content">
-                    <a href="#" id="africa" onclick="africa()">Africa</a>
-                    <a href="#" id="asia" onclick="asia()">Asia</a>
-                    <a href="#" id="europe" onclick="europe()">Europe</a>
-                    <a href="#" id="north-america" onclick="northAmerica()">North America</a>
-                    <a href="#" id="oceania" onclick="oceania()">Oceania</a>
-                    <a href="#" id="south-america" onclick="southAmerica()">South America</a>
+                    <a href="continents/africa.html">Africa</a>
+                    <a href="continents/asia.html">Asia</a>
+                    <a href="continents/europe.html">Europe</a>
+                    <a href="continents/north-america.html">North America</a>
+                    <a href="continents/south-america.html">South America</a>
+                    <a href="continents/australia.html">Australia</a>
                     </div> <!-- dropdown-content -->
                 </div> <!-- dropdown -->
-                <div id="map-label">
+                
+            <div id="map-label" class="button-style">
                 <p>Explore the map to uncover the snake species across different regions.</p>
                 </div>
-            </div><!-- end of map-container -->
+            </div>
 
-            <div class="flexbox-container">
+            <div class="flexbox-container default-color">
                 <div class="activities-box">
                     <img id="quiz-img" src="quiz.png" alt="Quiz">
                     <p>Test your knowledge with our snake quiz!</p>
