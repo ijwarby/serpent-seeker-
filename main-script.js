@@ -1,3 +1,12 @@
+
+
+//calling functions
+changeColor();
+
+
+
+
+
 //retrieves the dropdown menu 
 function displayContinents() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -19,30 +28,33 @@ window.onclick = function(event) {
 }
 
 
-//calling functions
-navBarColor();
-
 //dynamically change background color for navigation bar
-function navBarColor() {
+function changeColor() {
+  var header = document.querySelector(".header");
+  var body = document.body
+  var color = document.querySelector(".default-color");
   var navBar = document.querySelector(".nav-bar");
   var pageName = window.location.pathname.split("/").pop().split(".")[0];
 
   if (pageName === "index") {
     navBar.classList.add("default-nav");
+    header.classList.add("default-header");
+    body.classList.add("default-body");
+    color.classList.add("default-color");
+
   } else {
     console.log("changing pageName: " + pageName);
     navBar.classList.remove("default-nav");
     navBar.classList.add(pageName + "-nav");
+    header.classList.remove("default-header");
+    header.classList.add(pageName + "-header");
+    body.classList.remove("default-body");
+    body.classList.add(pageName + "-body");
+    color.classList.remove("default-color");
+    color.classList.add(pageName + "-color");
+    console.log("changed pageName: " + pageName);
   }
 };
-
-
-
-
-
-
-
-
 
 
 // Select all area elements
@@ -66,4 +78,3 @@ areas.forEach(area => {
 $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
 });
-

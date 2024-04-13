@@ -24,12 +24,18 @@
     z-index: 1000;
 }
 
-.default-nav {
-    background-color: #C06D1F;
+.default-body {
+    background-color: #1c1917;
+    padding: 0;
 }
 
-.africa-nav {
-    background-color: #523A28;
+.default-color {
+    background-color: #1c1917;
+    border-bottom: 3px solid #C06D1F;
+}
+
+.default-nav {
+    background-color: #C06D1F;
 }
 
 
@@ -91,14 +97,7 @@ body {
     border-radius: 1em;
 }
 
-.default-body {
-    background-color: #1c1917;
-    padding: 0;
-}
 
-.default-color {
-    background-color: #1c1917;
-}
 
 .header {
     display: flex;
@@ -111,7 +110,6 @@ body {
     padding: 0.5em;
     font-weight: bold;
     color: white;
-    border-bottom: 3px solid #C06D1F;
     /* border-top: 3px solid #C06D1F; */
 }
 
