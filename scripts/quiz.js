@@ -1,0 +1,218 @@
+// Global variables
+let countdownIntervalId;
+let score = 0;
+const totalQuestions = 5;
+
+// Object containing correct answers for each question
+const correctAnswers = {
+    question1: "option-1-2",
+    question2: "option-2-4",
+    question3: "option-3-1",
+    question4: "option-4-2",
+    question5: "option-5-4",
+};
+
+function startQuiz() {
+    /* initalise quiz, by hiding the title and start button, display the first question and next button */
+    document.getElementById("quiz-title").style.display = "none";
+    document.getElementById("start-button").style.display = "none";
+    document.getElementById("question1").style.display = "block";
+    document.getElementById("next-1").style.display = "block";
+    // Start the countdown timer and load the progress bar
+    countdownIntervalId = startCountdown();
+    // Load the progress bar for the first question
+    loadProgressBar(1);
+}
+
+
+function loadProgressBar(questionNumber) {
+    /* initialize the progress bar, create width using percentage of questions answered. */
+    const progressBar = document.getElementById('progress-bar');
+    const progress = document.getElementById('progress');
+
+    progressBar.style.display = "block";
+    const width = (questionNumber / totalQuestions) * 100;
+    console.log('Loading bar Width:', width); 
+    progress.style.width = width + "%";
+
+    // Hide the progress bar if all questions have been answered
+    if (questionNumber >= totalQuestions) {
+        progressBar.style.display = "none";
+    }
+}
+
+
+function startCountdown() {
+    /* initialize the countdown timer, create a countdown interval for each question.
+    libaries: https://sweetalert2.github.io/ 
+    references: https://sweetalert2.github.io/#usage , 
+    https://www.w3schools.com/jsref/met_win_setinterval.asp
+    https://www.w3schools.com/jsref/met_win_clearinterval.asp
+    */
+    const countdown = document.getElementById('countdown');
+    const countdownNumber = document.getElementById('countdown-number');
+    let time = 11;
+    countdown.style.display = "flex";
+
+    // Set up the countdown interval
+    const countdownInterval = setInterval(() => {
+        time--;
+        countdownNumber.innerHTML = time;
+        // Display a message and end the quiz if time runs out
+        if (time === 0) {
+            clearInterval(countdownInterval);
+            Swal.fire({
+                icon: 'error',
+                title: 'Time Up!',
+                text: 'You ran out of time.',
+                confirmButtonText: 'Start Again',
+                position: 'bottom',
+                customClass: {
+                    popup: 'swal-popup'
+                },
+            }).then(() => {
+                endQuiz();
+            });
+        }
+    }, 1000);
+
+    return countdownInterval;
+}
+
+function nextQuestion(currentQuestionId, nextQuestionId, currentNextButtonId, nextNextButtonId) {
+    /* initialize the next question, create a function to move to the next question.
+    libaries: https://sweetalert2.github.io/
+    references: https://sweetalert2.github.io/#usage
+    https://www.w3schools.com/jsref/jsref_slice_array.asp
+    */
+    if (!nextQuestionId) {
+        displayCompletionMessage();
+        return;
+    }
+
+    clearInterval(countdownIntervalId); // Clear the countdown interval
+
+    // Hide the current question and show the next one
+    document.getElementById(currentQuestionId).style.display = "none";
+    document.getElementById(nextQuestionId).style.display = "block";
+
+    // Hide the current "Next" button and show the next one
+    document.getElementById(currentNextButtonId).style.display = "none";
+    document.getElementById(nextNextButtonId).style.display = "block";
+    countdownIntervalId = startCountdown();
+
+    // Update the question number and load the progress bar
+    const questionNumber = parseInt(nextQuestionId.slice(-1));
+    loadProgressBar(questionNumber);
+}
+
+
+
+function displayCompletionMessage() {
+    /*display the completion message, create a function to display the final score.*/
+    document.getElementById("quiz-complete").style.display = "flex";
+    viewScore();
+}
+
+function viewScore() {
+    /*display final score html elements*/
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("score-message").style.display = "block";
+    document.getElementById("correct-answers").innerHTML = score;
+    document.getElementById("end-quiz").style.display = "block";
+}
+
+
+function endQuiz() {
+    /*Removes timer and progres bar elements, resets the quiz to start again*/
+    clearInterval(countdownIntervalId); // Clear the countdown interval
+
+    // Loops through all questions and hides them
+    for (let i = 1; i <= totalQuestions; i++) {
+        document.getElementById(`question${i}`).style.display = "none";
+        document.getElementById(`next-${i}`).style.display = "none";
+    }
+    // Hide completion message, score, and "End Quiz" button
+    document.getElementById("quiz-complete").style.display = "none";
+    document.getElementById("score-message").style.display = "none";
+    document.getElementById("end-quiz").style.display = "none";
+
+    // Show the title and start button to restart the quiz
+    document.getElementById("quiz-title").style.display = "block";
+    document.getElementById("start-button").style.display = "block";
+}
+
+
+function checkAnswer(questionId, correctAnswer) {
+    /*uses correct answers object to check if the selected answer is correct,
+    increment score if correct, display a message if correct or incorrect,
+    display a message if no answer is selected
+    references: https://sweetalert2.github.io/ */
+    const selectedOption = document.getElementsByName(questionId);
+    let selected = false;
+
+    // Loop through the selected options to check if an answer is selected
+    for (let i = 0; i < selectedOption.length; i++) {
+        if (selectedOption[i].checked) {
+            selected = true;
+            if (selectedOption[i].id === correctAnswer) {
+                score++; // Increment score if answer is correct
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Correct!',
+                    text: 'You selected the correct answer.',
+                    confirmButtonText: 'Next',
+                    position: 'bottom',
+                    customClass: {
+                        popup: 'swal-popup'
+                    },
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Incorrect!',
+                    text: 'You selected the wrong answer.',
+                    confirmButtonText: 'Next',
+                    position: 'bottom',
+                    customClass: {
+                        popup: 'swal-popup'
+                    },
+                });
+            }
+            break;
+        }
+    }
+
+    if (!selected) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'No Answer Selected!',
+            text: 'Please select an answer.',
+            confirmButtonText: 'OK',
+            position: 'bottom',
+            customClass: {
+                popup: 'swal-popup'
+            },
+        });
+    }
+}
+
+function assignEventListeners(totalQuestions) {
+    /*assign event listeners to the next button for each question
+    references: https://www.w3schools.com/jsref/met_document_addeventlistener.asp 
+    https://www.w3schools.com/js/js_string_templates.asp*/
+    for (let i = 1; i <= totalQuestions; i++) {
+        document.getElementById(`next-${i}`).addEventListener("click", function() {
+            // Check the answer and move to the next question
+            checkAnswer(`question${i}`, correctAnswers[`question${i}`]);
+            if (i < totalQuestions) {
+                nextQuestion(`question${i}`, `question${i+1}`, `next-${i}`, `next-${i+1}`);
+            } else {
+                nextQuestion(`question${i}`, "quiz-complete", `next-${i}`);
+            }
+        });
+    }
+}
+
+// Call the function to assign event listeners
+assignEventListeners(totalQuestions);

@@ -3,8 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Serpent Seeker</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="main-script.js" defer></script>
+        <link rel="stylesheet" href=".\styles\style.css">
+        <!-- Mabox GL JS libary and CSS-->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css'rel='stylesheet' />
+        <!-- my scripts-->
+        <script src="./scripts/mapbox-snakes.js" defer></script>
+        <script src="./scripts/main.js" defer></script>
         <!-- Google API font styles-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +21,10 @@
     <body class="default-body">
         <ul class="nav-bar default-nav">
             <div class="nav-links">
-                <a href="index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="logo2.png" alt="logo"></a>
+                <a href="index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="./images/logo2.png" alt="logo"></a>
                 <div class="right-links">
-                    <a href="map-page.html">Map</a>
-                    <a href="quiz.html">Quiz</a>
+                    <a href="./other/map-page.html">Map</a>
+                    <a href="./other/quiz.html">Quiz</a>
                     <a href="facts.html">Facts</a>
                 </div>
             </div>
@@ -51,27 +56,29 @@
                     <br><br> Welcome to Serpent Seeker, a platform dedicated to igniting the curiosity of snake enthusiasts worldwide. 
                     Here, you'll embark on a journey to discover these fascinating reptiles and their global distribution. 
                     Explore populated continents, delve into their habitats, and test your knowledge with engaging quizzes. 
-                    Join us in unraveling the mysteries of the serpent world!</p>
+                    Join us in unraveling the mysteries of the  world!</p>
                 </div>
             </div>
         </section>
     
-        <div class="flexbox-container default-color">
+        <div class="flexbox-container-map default-color">
         <!-- MapBox WebMap -->
         <!-- <div class="map-container"> -->
             <div id="map"></div>
-                <a href="map-page.html" id="flat-map-link" class="button-style">Go to Flat Continents Map &#x27A7;</a>
-                <div class="dropdown">
-                    <button onclick="displayContinents()" id="cont-dropbtn" class="button-style">Explore Continents &#11167</button>
+       
+            <a href="./other/map-page.html" id="flat-map-link" class="button-style">Go to Flat Continents Map &#x27A7;</a>
+            
+            <div class="dropdown">
+                <button onclick="displayContinents()" id="cont-dropbtn" class="button-style">Explore Continents &#11167</button>
                     <div id="myDropdown" class="dropdown-content">
-                    <a href="continents/africa.html">Africa</a>
-                    <a href="continents/asia.html">Asia</a>
-                    <a href="continents/europe.html">Europe</a>
-                    <a href="continents/north-america.html">North America</a>
-                    <a href="continents/south-america.html">South America</a>
-                    <a href="continents/australia.html">Australia</a>
+                    <a href="./continents/africa.html">Africa</a>
+                    <a href="./continents/asia.html">Asia</a>
+                    <a href="./continents/europe.html">Europe</a>
+                    <a href="./continents/north-america.html">North America</a>
+                    <a href="./continents/south-america.html">South America</a>
+                    <a href="./continents/australia.html">Australia</a>
                     </div> <!-- dropdown-content -->
-                </div> <!-- dropdown -->
+            </div> <!-- dropdown -->
                 
             <div id="map-label" class="button-style">
                 <p>Explore the map to uncover the snake species across different regions.</p>
@@ -91,12 +98,7 @@
                         <h1>Top Facts</h1>
                     </div>
                 </div>
-            </div>
-            
-            
-            <!-- MapBox JavaScript and CSS -->
-            <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
-            <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
-            <script src="mapbox_snakes.js"></script>
+            </div>      
+           
     </body>
 </html>

@@ -1,0 +1,155 @@
+.quiz-nav, .map-page-nav {
+  background-color: #185a4b;
+  margin-bottom: 0.5em;
+}
+
+.quiz-body, .map-page-body {
+  background-image: url(../images/pexels-mike-fallarme-413195.jpg)
+}
+
+.quiz-color, .map-page-color{
+  background-color: #032c0f;
+  border-bottom: 3px solid #7de7ab;
+}
+
+.header {
+  margin-bottom: 5em;
+}
+
+
+
+/*quiz styles for quiz.html*/
+
+.quiz-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10em;
+  background-color: #7fe69e;
+  margin: 1em;
+  box-sizing: border-box;
+  height: 50vh;
+  width: 70%;
+  position: relative;
+}
+
+#quiz-title {
+  font-size: 2em;
+  width: 100%;
+  background-color:#7fe69e;
+  color: rgb(50, 32, 28);
+}
+
+#quiz-complete {
+  display: none;
+}
+
+#countdown {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 4em;
+  height: 4em;
+  margin: 1em;
+  border-radius: 50%;
+  background-color: #341c11;
+  border: 2px solid #00873b;
+}
+
+#countdown-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+#progress-bar {
+  display: none;
+  width: 40%;
+  background-color: #f3f3f3;
+  border: 1px solid #bbb;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5em;
+}
+
+#progress {
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+  position: absolute;
+  transition: width 0.5s ease;
+}
+
+#start-button {
+  position: absolute; 
+  font-size: 1rem;
+  bottom: 0; 
+  left: 50%; 
+  padding: 0.5em;
+  margin: 1em;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: rgb(50, 32, 28);
+  background-color: #ffe6e2ea;
+  border-radius: 1em;
+  border: 2px solid rgb(50, 32, 28);
+  cursor: pointer;
+}
+
+.next-button {
+  display: none;
+  position: absolute; 
+  font-size: 1rem;
+  bottom: 0; 
+  left: 50%; 
+  padding: 0.5em;
+  margin: 1em;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: rgb(50, 32, 28);
+  background-color: #ffe6e2ea;
+  border-radius: 1em;
+  border: 2px solid rgb(50, 32, 28);
+  cursor: pointer;
+}
+
+
+.question {
+  display: none;
+  background-color: #f9f9f95e;
+  color: rgb(50, 32, 28);
+  font-weight: bold;
+  width: 100%;
+  padding: 5em;
+  border-radius: 5px
+}
+
+.swal-popup {
+  margin-bottom: 12%;
+}
+
+.answers {
+  display: none;
+}
+
+
+.map-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+  color: white;
+  font-size: 1.2em;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+}
