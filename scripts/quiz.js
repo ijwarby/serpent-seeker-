@@ -20,8 +20,6 @@ function startQuiz() {
     document.getElementById("next-1").style.display = "block";
     // Start the countdown timer and load the progress bar
     countdownIntervalId = startCountdown();
-    // Load the progress bar for the first question
-    loadProgressBar(1);
 }
 
 
@@ -36,7 +34,7 @@ function loadProgressBar(questionNumber) {
     progress.style.width = width + "%";
 
     // Hide the progress bar if all questions have been answered
-    if (questionNumber >= totalQuestions) {
+    if (questionNumber - 1 >= totalQuestions) {
         progressBar.style.display = "none";
     }
 }
@@ -182,33 +180,33 @@ function checkAnswer(questionId, correctAnswer) {
             break;
         }
     }
-
-    if (!selected) {
-        Swal.fire({
-            icon: 'warning',
-            title: 'No Answer Selected!',
-            text: 'Please select an answer.',
-            confirmButtonText: 'OK',
-            position: 'bottom',
-            customClass: {
-                popup: 'swal-popup'
-            },
-        });
-    }
 }
 
 function assignEventListeners(totalQuestions) {
-    /*assign event listeners to the next button for each question
-    references: https://www.w3schools.com/jsref/met_document_addeventlistener.asp 
-    https://www.w3schools.com/js/js_string_templates.asp*/
+    /* This function assigns event listeners to the "Next" button for each question */
+
     for (let i = 1; i <= totalQuestions; i++) {
-        document.getElementById(`next-${i}`).addEventListener("click", function() {
-            // Check the answer and move to the next question
-            checkAnswer(`question${i}`, correctAnswers[`question${i}`]);
+        // Get the "Next" button element for the current question
+        const nextButton = document.querySelector('[id="next-' + i + '"]');
+        
+        // Add a click event listener to the "Next" button
+        nextButton.addEventListener("click", function() {
+            console.log("Question " + i + " Next button clicked")
+            const questionId = 'question' + i;
+            const correctAnswer = correctAnswers[questionId];
+            checkAnswer(questionId, correctAnswer);
+            
+            // Move to the next question if not the last one
             if (i < totalQuestions) {
-                nextQuestion(`question${i}`, `question${i+1}`, `next-${i}`, `next-${i+1}`);
+                const nextQuestionId = 'question' + (i + 1);
+                const currentNextButtonId = 'next-' + i;
+                const nextNextButtonId = 'next-' + (i + 1);
+                nextQuestion(questionId, nextQuestionId, currentNextButtonId, nextNextButtonId);
+                loadProgressBar(i + 1);
             } else {
-                nextQuestion(`question${i}`, "quiz-complete", `next-${i}`);
+                // Display completion message if it's the last question
+                nextQuestion(questionId, "quiz-complete");
+                loadProgressBar(i + 1);
             }
         });
     }

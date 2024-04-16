@@ -1,27 +1,51 @@
-mapboxgl.accessToken = "pk.eyJ1IjoiY3liZXJtYXBwZXI5IiwiYSI6ImNsdWg2cjQ1cDFxbWsyanBrZG15N3hsYjQifQ.3Vbx53cGRAS7K3livjySgg";
-const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/cybermapper9/cluh9p4y4016m01prakl7gwke', 
-    zoom: 1.5,
-    maxZoom: 5 });
 
-// Create a single popup when the map is initialized
-const popup = new mapboxgl.Popup({ offset: [0, -15] });
+function loadMap() {
+    const mapElement = document.getElementById('map');
+    if (!mapElement) return;
 
-//Function to add popup windows to snake locations on the map
-function updatePopupContent(popup, snake) {
-    popup.setHTML(`
-        <div class="popup-content">
-            <h3>${snake.species}</h3>
-            <img src="${snake.imagePath}" alt="${snake.species}">
-            <p>Reference: <a ${snake.fileURL}</a></p>
-            <p>License: <a ${snake.referenceLicense}</a></p>
-        </div>
-    `);
+    mapboxgl.accessToken = "pk.eyJ1IjoiY3liZXJtYXBwZXI5IiwiYSI6ImNsdWg2cjQ1cDFxbWsyanBrZG15N3hsYjQifQ.3Vbx53cGRAS7K3livjySgg";
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/cybermapper9/cluh9p4y4016m01prakl7gwke', 
+        zoom: 1.5,
+        maxZoom: 5 
+    });
+
+    const popup = new mapboxgl.Popup({ offset: [0, -15] });
+
+    function updatePopupContent(popup, snake) {
+        popup.setHTML(`
+            <div class="popup-content">
+                <h3>${snake.species}</h3>
+                <img src="${snake.imagePath}" alt="${snake.species}">
+                <p>Reference: <a href="${snake.fileURL}">${snake.species} Reference</a></p>
+                <p>License: <a href="${snake.referenceLicense}">${snake.species} License</a></p>
+            </div>
+        `);
+    }
+
+    map.on('mousemove', (event) => {
+        const features = map.queryRenderedFeatures(event.point, { layers: ['snake-locations'] });
+       
+        if (!features.length) {
+            popup.remove();
+            return;
+        }
+
+        const feature = features[0];
+        const snake = snakes[feature.properties.species];
+
+        popup.setLngLat(event.lngLat);
+        updatePopupContent(popup, snake);
+        popup.addTo(map);
+    });
 }
 
+document.addEventListener('DOMContentLoaded', loadMap);
+
+
 //creating snake objects
-window.snakes = {
+let snakes = {
     'Puff Adder': {
         species: 'Puff Adder',
         fileURL: 'href="https://commons.wikimedia.org/wiki/File:Kopf_einer_Puffotter.JPG">Kopf einer Puffotter</a>',
@@ -286,21 +310,58 @@ window.snakes = {
     }
 };
 
-console.log("mapbox-snakes.js loaded")
 
-// Add the snakes to the map
-map.on('mousemove', (event) => {
-    const features = map.queryRenderedFeatures(event.point, { layers: ['snake-locations'] });
-   
-    if (!features.length) {
-        popup.remove();
-        return;
+function getSnakeStats(button) {
+    // Get the snake species from the adjacent h2 element
+    const snakeSpecies = button.parentElement.querySelector('.snake-species').innerText;
+    
+    // Retrieve the corresponding snake object from the snakes object
+    const snake = snakes[snakeSpecies.trim()]; // Trim any leading or trailing whitespace
+  
+    if (snake) {
+        // Create a new element to hold the stats
+        const statsElement = document.createElement('div');
+        statsElement.classList.add('snake-stats');
+        
+        // Construct the HTML content for the stats
+        const statsHTML = `
+            <p><strong>Colors:</strong> ${snake.colors}</p>
+            <p><strong>Length:</strong> ${snake.length}</p>
+            <p><strong>Weight:</strong> ${snake.weight}</p>
+            <p><strong>Skin Pattern:</strong> ${snake.skinPattern}</p>
+            <p><strong>Venomous:</strong> ${snake.venomous}</p>
+        `;
+        
+        // Set the HTML content of the stats element
+        statsElement.innerHTML = statsHTML;
+        
+        // Insert the stats element below the box
+        const boxElement = button.parentElement;
+        boxElement.appendChild(statsElement);
+
+        // Hide the show-stats button and display the hide-stats button
+        button.style.display = 'none';
+        const hideButton = boxElement.querySelector('.hide-stats');
+        hideButton.style.display = 'block';
+
+    } else {
+        alert('Snake stats not found!');
+    }
+}
+
+function hideSnakeStats(button) {
+    // Hide stats element
+    const statsElement = button.parentElement.querySelector('.snake-stats');
+    if (statsElement) {
+        statsElement.remove(); // Remove the stats element from the DOM
     }
 
-    const feature = features[0];
-    const snake = snakes[feature.properties.species];
+    // Hide hide-stats button and display the show-stats button
+    const showStatsButton = button.parentElement.querySelector('.show-stats');
+    if (showStatsButton) {
+        showStatsButton.style.display = 'inline'; // Assuming the show-stats button is an inline element
+    }
 
-    popup.setLngLat(event.lngLat);
-    updatePopupContent(popup, snake);
-    popup.addTo(map);
-});
+    // Hide hide-stats button
+    button.style.display = 'none';
+}

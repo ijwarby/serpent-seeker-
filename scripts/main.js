@@ -48,19 +48,6 @@ function closeDropdowns(event) {
   }
 }
 
-console.log("calling getSnakeStats()");
-//Function to display the snake information
-function getSnakeStats(buttonElement) {
-  // Get the snake's name from the preceding <h2> element
-  var snakeName = buttonElement.previousElementSibling.innerText;
-
-  // Get the snake's stats from the `snakes` object
-  var snakeStats = window.snakes[snakeName];
-
-  // Do something with `snakeStats`...
-  console.log(snakeStats);
-}
-
 
 // Call functions
 console.log("changeColor function called");
