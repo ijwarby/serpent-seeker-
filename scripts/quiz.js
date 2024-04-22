@@ -113,10 +113,11 @@ function endQuiz() {
         document.getElementById(`question${i}`).style.display = "none";
         document.getElementById(`next-${i}`).style.display = "none";
     }
-    // Hide completion message, score, and "End Quiz" button
+    // Hide elements 
     document.getElementById("quiz-complete").style.display = "none";
     document.getElementById("score-message").style.display = "none";
     document.getElementById("end-quiz").style.display = "none";
+    document.getElementById("countdown").style.display = "none";
 
     // Show the title and start button to restart the quiz
     document.getElementById("quiz-title").style.display = "block";
