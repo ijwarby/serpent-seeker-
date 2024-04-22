@@ -23,8 +23,6 @@ function loadMap() {
             <div class="popup-content">
                 <h3>${snake.species}</h3>
                 <img src="${snake.imagePath}" alt="${snake.species}">
-                <p>Reference: <a href="${snake.fileURL}">${snake.species} Reference</a></p>
-                <p>License: <a href="${snake.referenceLicense}">${snake.species} License</a></p>
             </div>
         `);
     }
@@ -57,8 +55,6 @@ document.addEventListener('DOMContentLoaded', loadMap);
 let snakes = {
     'Puff Adder': {
         species: 'Puff Adder',
-        fileURL: 'href="https://commons.wikimedia.org/wiki/File:Kopf_einer_Puffotter.JPG">Kopf einer Puffotter</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         imagePath: './images/puff-adder.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 4 feet',
@@ -69,8 +65,6 @@ let snakes = {
     'Black Mamba': {
         species: 'Black Mamba',
         imagePath: './images/black-mamba.jpg',
-        fileURL: '<a href="https://commons.wikimedia.org/wiki/File:Black_Mamba_Head.jpg">Black Mamba Head</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Grey, brown, olive, yellow',
         length: '6 to 14 feet',
         weight: '1.6 to 3.5 pounds',
@@ -80,8 +74,6 @@ let snakes = {
     'Boomslang': {
         species: 'Boomslang',
         imagePath: './images/boomslang.jpg',
-        fileURL: '<a href="https://commons.wikimedia.org/wiki/File:Dispholidus_typus.jpg">By William Warby</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>',
         colors: 'Green, brown, black',
         length: '4 to 6 feet',
         weight: '0.2 to 0.4 pounds',
@@ -91,8 +83,6 @@ let snakes = {
     'Gaboon Viper': {
         species: 'Gaboon Viper',
         imagePath: './images/gaboon-viper.jpg',
-        fileURL: '< a href= "https://upload.wikimedia.org/wikipedia/commons/9/98/Bitis_gabonica.jpg">Gaboon Viper</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow, purple',
         length: '4 to 6 feet',
         weight: '15 to 20 pounds',
@@ -102,8 +92,6 @@ let snakes = {
     'Indian Cobra': {
         species: 'Indian Cobra',
         imagePath: './images/indian-cobra.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/e/ed/Indian_spectacled_cobra_-_Flickr_-_Scorius.jpg">By Chandan Singh</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
         colors: 'Black, brown, yellow',
         length: '4 to 7 feet',
         weight: '3 to 5 pounds',
@@ -113,8 +101,6 @@ let snakes = {
     'Russells Viper': {
         species: 'Russell\'s Viper',
         imagePath: './images/russell-viper.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/6/61/Russells_viper_in_pune_zoo.jpg">Gupt. sumeet</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow',
         length: '3 to 5 feet',
         weight: '5 to 7 pounds',
@@ -124,8 +110,6 @@ let snakes = {
     'King Cobra': {
         species: 'King Cobra',
         imagePath: './images/king-cobra.jpg',
-        fileURL: '<a href"https://upload.wikimedia.org/wikipedia/commons/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg">By Michael Allen Smith</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
         colors: 'Black, brown, yellow',
         length: '10 to 18 feet',
         weight: '13 to 20 pounds',
@@ -135,8 +119,6 @@ let snakes = {
     'Green Tree Python': {
         species: 'Green Tree Python',
         imagePath: './images/green-tree.jpg',
-        fileURL: 'https://commons.wikimedia.org/wiki/File:Gruenebaumpython4cele4.jpg">Green Tree Python</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
         colors: 'Green, yellow, blue',
         length: '4 to 6 feet',
         weight: '2 to 3 pounds',
@@ -146,8 +128,6 @@ let snakes = {
     'European Adder': {
         species: 'European Adder',
         imagePath: './images/european-adder.jpg',
-        fileURL: '<a href="https://commons.wikimedia.org/wiki/File:Viperaberus1.jpg">By Zdeněk Fric</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '1 to 2 feet',
         weight: '0.2 to 0.4 pounds',
@@ -157,40 +137,35 @@ let snakes = {
     'Green Whip': {
         species: 'Green Whip Snake',
         imagePath: './images/green-whip-snake.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/7/79/Viridiflavus-Lorraine-IMG_4974.jpg">By Harold van der Lingen</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/4.0" rel="licence"> CC BY-SA 4.0</a>',
         colors: 'Green, yellow, black',
         length: '3 to 4 feet',
         weight: '0.2 to 0.4 pounds',
         skinPattern: 'smooth',
+        venomous: 'No',
 
     },
     'Smooth Snake': {
         species: 'Smooth Snake',
         imagePath:  './images/smooth-snake.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/1/17/Schlingnatter.jpg">By Der Irbis</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '1 to 2 feet',
         weight: '0.2 to 0.4 pounds',
         skinPattern: 'smooth',
+        venomous: 'No',
     },
     'Grass Snake': {
         species: 'Grass Snake',
         imagePath: './images/grass-snake.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/d/df/2017.07.17.-21-Tiefer_See_oder_Grubensee-Storkow_%28Mark%29--Ringelnatter.jpg">By Andreas Eichler</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license">CC BY-SA 4.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 3 feet',
         weight: '0.2 to 0.4 pounds',
         skinPattern: 'spotted',
+        venomous: 'No',
 
     },
     'Eastern Diamondback Rattlesnake': {
         species: 'Eastern Diamondback Rattlesnake',
         imagePath: './images/eastern-diamondback.jpg',
-        fileURL: '<a href"https://upload.wikimedia.org/wikipedia/commons/d/d8/LouisvilleZooCrotalus.jpg">By FinneJager</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '3 to 6 feet',
         weight: '4 to 10 pounds',
@@ -200,18 +175,15 @@ let snakes = {
     'Western Diamondback Rattlesnake': {
         species: 'Western Diamondback Rattlesnake',
         imagePath: './images/western-diamonback.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/9/99/Crotalus_atrox_diamantklapperschlange_kopf.jpg">By Holger Krisp</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '3 to 5 feet',
         weight: '4 to 10 pounds',
         skinPattern: 'diamonds',
+        venomous: 'Yes',
     },
     'Coral Snake': {
         species: 'Coral Snake',
         imagePath: './images/coral-snake.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/3/3c/Coral_009.jpg">By Norman Benton</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Red, yellow, black',
         length: '2 to 4 feet',
         weight: '0.2 to 0.4 pounds',
@@ -221,8 +193,6 @@ let snakes = {
     'Copperhead': {
         species: 'Copperhead',
         imagePath: './images/copperhead.jpg',
-        fileURL: '<a HREF="https://upload.wikimedia.org/wikipedia/commons/d/db/Agkistrodon_contortrix_qtl1.jpg"> By Quartl</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 4 feet',
         weight: '2 to 4 pounds',
@@ -232,8 +202,6 @@ let snakes = {
     'Cottonmouth': {
         species: 'Cottonmouth',
         imagePath: './images/cottonmouth.png',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/f/fe/Agkistrodon_piscivorus_piscivorus_CDC.png">By Edward J.Wozniak</a>',
-        referenceLicense: '<a href="https://en.wikipedia.org/wiki/Public_domain" rel="license">Public Domain</a>',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 4 feet',
         weight: '2 to 4 pounds',
@@ -243,8 +211,6 @@ let snakes = {
     'Bushmaster': {
         species: 'Bushmaster',
         imagePath: './images/bushmaster.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Lachesis_muta_muta.jpg">By Christopher Murray</a>',
-        referenceLicense: '<a href="https://en.wikipedia.org/wiki/Public_domain" rel="license">Public Domain</a>',
         colors: 'Brown, grey, yellow, black',
         length: '6 to 12 feet',
         weight: '6 to 15 pounds',
@@ -254,8 +220,6 @@ let snakes = {
     'Yellow Anaconda': {
         species: 'Yellow Anaconda',
         imagePath: './images/yellow-anaconda.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/b/b3/Anaconda_jaune_34.JPG">By Patrick Jean</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '10 to 12 feet',
         weight: '30 to 40 pounds',
@@ -266,8 +230,6 @@ let snakes = {
     'Green Anaconda': {
         species: 'Green Anaconda',
         imagePath: './images/green-anaconda.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/8/88/Anaconda_al_acecho.JPG">By Daniel10ortegaven</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
         colors: 'Green, yellow, black',
         length: '15 to 20 feet',
         weight: '200 to 300 pounds',
@@ -277,29 +239,25 @@ let snakes = {
     'Coastal Taipan': {
         species: 'Coastal Taipan',
         imagePath: '/./images/coastal-taipan.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Oxyuranus_scutellatus_first_milked_specimen_MV_3.jpg">By Jane Melville</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license">CC BY-SA 4.0</a>',
         colors: 'Brown, grey, yellow, black',
         length: '6 to 8 feet',
         weight: '5 to 10 pounds',
         skinPattern: 'smooth',
+        venomous: 'Yes',
 
     },
     'Death Adder': {
         species: 'Death Adder',
         imagePath: '/./images/death-adder.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/5/5a/CSIRO_ScienceImage_3990_Death_Adder.jpg">By CSIRO</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by/3.0/au/legalcode" rel="license">CC BY 3.0 AU</a>',
         colors: 'Brown, grey, yellow, black',
         length: '3 to 4 feet',
         weight: '1 to 2 pounds',
         skinPattern: 'rough camouflage',
+        venomous: 'Yes',
     },
     'Inland Taipan': {
         species: 'Inland Taipan',
-        imagePath: '/./images/inland-taipan.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/f/fe/Fierce_Snake-Oxyuranus_microlepidotus.jpg">By Xlerate</a>',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+        imagePath: './images/inland-taipan.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '6 to 8 feet',
         weight: '5 to 10 pounds',
@@ -309,8 +267,6 @@ let snakes = {
     'Red-bellied Black Snake': {
         species: 'Red-bellied Black Snake',
         imagePath: '/./images/red-bellied-black-snake.jpg',
-        fileURL: '<a href="https://upload.wikimedia.org/wikipedia/commons/3/38/Red-bellied_Black_Snake_%28Pseudechis_porphyriacus%29_%288397134493%29.jpg">By Matt',
-        referenceLicense: '<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
         colors: 'Black, red, yellow',
         length: '3 to 5 feet',
         weight: '2 to 3 pounds',
