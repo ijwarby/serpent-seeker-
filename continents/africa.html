@@ -3,83 +3,95 @@
   <head>
     <meta charset="UTF-8">
     <title>Africa</title>
-    <link rel="stylesheet" href="..\styles\style.css">
-    <link rel="stylesheet" href="..\styles\continent-styles.css">
-    <!-- Your scripts -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/continent-styles.css">
+    <!-- scripts -->
     <script src="../scripts/mapbox-snakes.js" defer></script>
     <script src="../scripts/main.js" defer></script>
     <!-- Google API font styles-->
-      <!-- Google API font styles-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
   </head>
-</head>
-    <body class="default-body">
-        <ul class="nav-bar default-nav">
-            <div class="nav-links">
-                <a href="../index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="../images/logo2.png" alt="logo"></a>
-                <div class="right-links">
-                    <a href="..\other\map-page.html">Map</a>
-                    <a href="../other/quiz.html">Quiz</a>
-                    <a href="facts.html">Facts</a>
-                </div>
-            </div>
-        </ul>
-
-        <div class="header default-color">
-            <h1>Snakes of Africa</h1>
-            <p>Serpent Seeker</p>
+  <body class="default-body">
+    <main>
+    <ul class="nav-bar default-nav">
+      <li class="nav-links">
+        <a href="../index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="../images/logo2.png" alt="logo"></a>
+        <div class="right-links">
+          <a href="../other/map-page.html">Map</a>
+          <a href="../other/quiz.html">Quiz</a>
+          <a href="facts.html">Facts</a>
         </div>
+      </li>
+    </ul>
+
+    <div class="header default-color">
+      <h1>Snakes of Africa</h1>
+      <p>Serpent Seeker</p>
+    </div>
 
     <div class ="grid-parent">
       <div class="grid-container">
-            <div class="grid-item">
-                  <img class="image-size" src="../images/gaboon-viper.jpg" alt="Gaboon Viper">
-                <article class="text-box">
-                  <h2 class="snake-species">Gaboon Viper</h2>
-                    <p>The Gaboon viper is the largest viper in Africa and the second longest venomous snake in the world. 
-                        It is known for its striking coloration and large fangs. The Gaboon viper is a master of camouflage, blending in with the forest floor. </p>
-                        <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
-                        <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
-            </div>
-            <div class="grid-item">
-                  <img class="image-size" src="../images/black-mamba.jpg" alt="black-mamba">
-                <article class="text-box">
-                  <h2 class="snake-species">Black Mamba</h2>
-                  <p>Black mambas are fast, nervous, lethally venomous, and when threatened, highly aggressive. They have been blamed for numerous human deaths, and African myths exaggerate their capabilities to legendary proportions. 
-                    For these reasons, the black mamba is widely considered the world’s deadliest snake. </p>
-                    <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
-                    <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
-                </article> <!-- text-box -->
-            </div> <!-- grid-item -->
-
-            <div class="grid-item">
-                  <img class="image-size" src="../images/puff-adder.jpg" alt="puff-adder">
-                <article class="text-box">
-                  <h2 class="snake-species">Puff Adder</h2>
-                  <p>The puff adder is responsible for causing the most snakebite fatalities in Africa. 
-                    It is a venomous viper species found in savannah and grasslands from Morocco and western Arabia throughout Africa except for the Sahara and rain forest regions. 
-                    <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
-                    <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
-                  </article> <!-- text-box -->
-            </div> <!-- grid-item -->
-
-            <div class="grid-item">
-                  <img class="image-size " src="../images/boomslang.jpg" alt="boomslang">
-                <article class="text-box">
-                  <h2 class="snake-species">Boomslang</h2>
-                    <p>The boomslang is a large, venomous tree snake that is native to sub-Saharan Africa.
-                     It is known for its large eyes and highly toxic venom. The boomslang is a rear-fanged snake, meaning that it has fangs located in the back of its mouth. </p>
-                     <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
-                     <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
-                    </article> <!-- text-box -->
-            </div> <!-- grid-item -->
-      </div> <!-- grid-container -->
-    </div> <!-- grid-parent -->
-    
-                 
-    </body>
+        <div class="grid-item">
+          <img class="image-size" src="../images/gaboon-viper.jpg" alt="Gaboon Viper">
+          <article class="text-box">
+            <h2 class="snake-species">Gaboon Viper</h2>
+            <p>The Gaboon viper is the largest viper in Africa and the second longest venomous snake in the world. 
+              It is known for its striking coloration and large fangs. The Gaboon viper is a master of camouflage, blending in with the forest floor. </p>
+              <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+              <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+          </article>
+        </div>
+        <div class="grid-item">
+          <img class="image-size" src="../images/black-mamba.jpg" alt="black-mamba">
+        <article class="text-box">
+          <h2 class="snake-species">Black Mamba</h2>
+          <p>Black mambas are named after the color of the inside of its mouth. They are found in rocky savannas and lowland forests.
+            The black mamba is one of the fastest snakes, capable of speeds of more than 12 miles. </p>
+            <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+            <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+        </article> <!-- text-box -->
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+          <img class="image-size" src="../images/puff-adder.jpg" alt="puff-adder">
+        <article class="text-box">
+          <h2 class="snake-species">Puff Adder</h2>
+          <p>The puff adder is responsible for causing the most snakebite fatalities in Africa. 
+            It is a venomous viper species found in savannah and grasslands from Morocco and western Arabia throughout Africa except for the Sahara and rain forest regions. 
+            <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+            <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+          </article> <!-- text-box -->
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+          <img class="image-size " src="../images/boomslang.jpg" alt="boomslang">
+        <article class="text-box">
+          <h2 class="snake-species">Boomslang</h2>
+            <p>The boomslang is a large, venomous tree snake that is native to sub-Saharan Africa.
+             It is known for its large eyes and highly toxic venom. The boomslang is a rear-fanged snake, meaning that it has fangs located in the back of its mouth. </p>
+             <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+             <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+            </article> <!-- text-box -->
+    </div> <!-- grid-item -->
+  </div>
+</div>
+    </main>
+    <footer class = "site-footer">
+      <p>Created By: Isaac Warburton  © 2021 Serpent Seeker</p>
+    </footer>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,11 @@
 }
 
 .quiz-body, .map-page-body {
-  background-image: url(../images/pexels-mike-fallarme-413195.jpg)
+  background-image: url(../images/pexels-mike-fallarme-413195.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 100vh; /* Add this */
 }
 
 .quiz-color, .map-page-color{
@@ -12,8 +16,18 @@
   border-bottom: 3px solid #7de7ab;
 }
 
-.header {
-  margin-bottom: 5em;
+.facts-nav {
+  background-color: #185a4b;
+  margin-bottom: 0.5em;
+}
+
+.facts-body {
+  background-color: #032c0f;
+}
+
+.facts-color {
+  background-color: #7de7ab;
+  border-bottom: 3px solid #185a4b;
 }
 
 
@@ -26,7 +40,7 @@
   justify-content: center;
   padding: 10em;
   background-color: #7fe69e;
-  margin: 1em;
+  margin: auto;
   box-sizing: border-box;
   height: 50vh;
   width: 70%;
@@ -39,6 +53,7 @@
   background-color:#7fe69e;
   color: rgb(50, 32, 28);
 }
+
 
 #quiz-complete {
   display: none;
@@ -65,24 +80,12 @@
   color: white;
 }
 
-#progress-bar {
-  display: none;
-  width: 40%;
-  background-color: #f3f3f3;
-  border: 1px solid #bbb;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0.5em;
-}
-
-#progress {
-  width: 0;
-  height: 100%;
+#view-score, #end-quiz-button {
   background-color: #4caf50;
-  position: absolute;
-  transition: width 0.5s ease;
+  color: white;
+  border: 1px solid #4caf50;
+  padding: 0.5em;
+  margin-bottom: 1em;
 }
 
 #start-button {
@@ -137,7 +140,7 @@
   display: none;
 }
 
-
+/*map styles for map-page.html*/
 .map-text {
   display: flex;
   align-items: center;
@@ -149,7 +152,61 @@
   font-size: 1.2em;
 }
 
+.map-container{
+  margin: auto;
+  width: autp;
+}
+
 .map-container img {
   width: 100%;
   height: auto;
+}
+
+/*facts styles for facts.html*/
+
+#facts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fact-section {
+  background-color: #fff; /* White background */
+  width: 70%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.fact-section h2 {
+  color: #333; /* Dark gray text */
+  margin-bottom: 10px;
+}
+
+.fact-section p {
+  color: #666; /* Medium gray text */
+}
+
+
+@media screen and (max-width: 1000px) {
+  .quiz-container {
+    width: auto;
+    height: 400px; 
+    padding: 9em; 
+  }
+
+  #quiz-title {
+    font-size: 1.5em;
+    width: auto;
+  }
+
+
+  .question {
+    display: none;
+    background-color: #f9f9f95e;
+    color: rgb(50, 32, 28);
+    font-weight: bold;
+    padding: 1em; 
+    border-radius: 5px;
+  }
+
 }

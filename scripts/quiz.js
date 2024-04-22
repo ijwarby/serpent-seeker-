@@ -20,23 +20,7 @@ function startQuiz() {
     document.getElementById("next-1").style.display = "block";
     // Start the countdown timer and load the progress bar
     countdownIntervalId = startCountdown();
-}
-
-
-function loadProgressBar(questionNumber) {
-    /* initialize the progress bar, create width using percentage of questions answered. */
-    const progressBar = document.getElementById('progress-bar');
-    const progress = document.getElementById('progress');
-
-    progressBar.style.display = "block";
-    const width = (questionNumber / totalQuestions) * 100;
-    console.log('Loading bar Width:', width); 
-    progress.style.width = width + "%";
-
-    // Hide the progress bar if all questions have been answered
-    if (questionNumber - 1 >= totalQuestions) {
-        progressBar.style.display = "none";
-    }
+    score = 0; // Reset the score
 }
 
 
@@ -101,7 +85,6 @@ function nextQuestion(currentQuestionId, nextQuestionId, currentNextButtonId, ne
 
     // Update the question number and load the progress bar
     const questionNumber = parseInt(nextQuestionId.slice(-1));
-    loadProgressBar(questionNumber);
 }
 
 
@@ -202,11 +185,9 @@ function assignEventListeners(totalQuestions) {
                 const currentNextButtonId = 'next-' + i;
                 const nextNextButtonId = 'next-' + (i + 1);
                 nextQuestion(questionId, nextQuestionId, currentNextButtonId, nextNextButtonId);
-                loadProgressBar(i + 1);
             } else {
                 // Display completion message if it's the last question
                 nextQuestion(questionId, "quiz-complete");
-                loadProgressBar(i + 1);
             }
         });
     }

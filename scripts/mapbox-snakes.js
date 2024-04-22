@@ -1,5 +1,7 @@
 
 function loadMap() {
+    /* Uses Mapbox GL JS to create an interactive map of snake locations,
+     if the map element exists on the page */
     const mapElement = document.getElementById('map');
     if (!mapElement) return;
 
@@ -11,9 +13,12 @@ function loadMap() {
         maxZoom: 5 
     });
 
+    /*Add snake locations to the map using .Popup method, 
+    Reference: https://docs.mapbox.com/mapbox-gl-js/example/popup/ */
     const popup = new mapboxgl.Popup({ offset: [0, -15] });
 
     function updatePopupContent(popup, snake) {
+        /* Updates the content of the popup with the given snake object */
         popup.setHTML(`
             <div class="popup-content">
                 <h3>${snake.species}</h3>
@@ -25,6 +30,9 @@ function loadMap() {
     }
 
     map.on('mousemove', (event) => {
+        /* uses the queryRenderedFeatures method to query the map for personally created dataset of snake locations.
+        This dataset requires Mpbox personal account to view online so the
+        GEOJSON file to view is located at: serpent-seeker--1\other\features.geojson */
         const features = map.queryRenderedFeatures(event.point, { layers: ['snake-locations'] });
        
         if (!features.length) {
@@ -41,6 +49,7 @@ function loadMap() {
     });
 }
 
+// Load the map when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', loadMap);
 
 
@@ -312,18 +321,19 @@ let snakes = {
 
 
 function getSnakeStats(button) {
-    // Get the snake species from the adjacent h2 element
+    /* If snake species is found,
+    Retrieves the snake stats from the snakes object, creates a DOM stats element, adds to class named snake-stats.
+    creates HTML content, uses appendChild method to add content. Displaus content in the box element, and replaces the show-stats button.
+    References for methods used: https://www.w3schools.com/jsref/jsref_trim_string.asp#gsc.tab=0&gsc.q=appendChild
+    https://www.w3schools.com/jsref/jsref_trim_string.asp#gsc.tab=0
+    */
     const snakeSpecies = button.parentElement.querySelector('.snake-species').innerText;
-    
-    // Retrieve the corresponding snake object from the snakes object
-    const snake = snakes[snakeSpecies.trim()]; // Trim any leading or trailing whitespace
+    const snake = snakes[snakeSpecies.trim()]; 
   
     if (snake) {
-        // Create a new element to hold the stats
         const statsElement = document.createElement('div');
         statsElement.classList.add('snake-stats');
-        
-        // Construct the HTML content for the stats
+
         const statsHTML = `
             <p><strong>Colors:</strong> ${snake.colors}</p>
             <p><strong>Length:</strong> ${snake.length}</p>
@@ -332,14 +342,9 @@ function getSnakeStats(button) {
             <p><strong>Venomous:</strong> ${snake.venomous}</p>
         `;
         
-        // Set the HTML content of the stats element
         statsElement.innerHTML = statsHTML;
-        
-        // Insert the stats element below the box
         const boxElement = button.parentElement;
         boxElement.appendChild(statsElement);
-
-        // Hide the show-stats button and display the hide-stats button
         button.style.display = 'none';
         const hideButton = boxElement.querySelector('.hide-stats');
         hideButton.style.display = 'block';
@@ -350,18 +355,18 @@ function getSnakeStats(button) {
 }
 
 function hideSnakeStats(button) {
-    // Hide stats element
+    /* if snake stats are found, removes the snake stats from the DOM, 
+    hides the hide-stats button, and shows the show-stats button. */
+  
     const statsElement = button.parentElement.querySelector('.snake-stats');
     if (statsElement) {
-        statsElement.remove(); // Remove the stats element from the DOM
+        statsElement.remove(); 
     }
 
-    // Hide hide-stats button and display the show-stats button
     const showStatsButton = button.parentElement.querySelector('.show-stats');
     if (showStatsButton) {
-        showStatsButton.style.display = 'inline'; // Assuming the show-stats button is an inline element
+        showStatsButton.style.display = 'inline'; 
     }
 
-    // Hide hide-stats button
     button.style.display = 'none';
 }

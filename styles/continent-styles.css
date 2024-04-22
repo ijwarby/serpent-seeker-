@@ -1,21 +1,44 @@
-.africa-nav {
+.africa-nav, .europe-nav {
   background-color:#561217;
 }
 
-.africa-body {
+.africa-body, .europe-body {
   background-color: #1c1917;
 }
 
-.africa-color {
-
+.africa-color, .europe-color {
   background-color: #2c6e63;;
 }
 
+.north-america-nav, .south-america-nav {
+  background-color:#911717;
+}
+
+.north-america-body, .south-america-body {
+  background-color: #e6e6e6;
+}
+
+.north-america-color, .south-america-color {
+  background-color: #093b85;
+}
+
+.asia-nav, .australia-nav {
+  background-color:#1b4164;
+}
+.asia-color, .australia-color {
+  background-color: #0f7970;
+}
+.asia-body, .australia-body {
+  background-color: #e6cabc;
+}
+
+.grid-parent {
+  background-color: #e7e5e5;
+  border: 3px solid #000000;
+}
 .grid-parent {
   display: flex;
   justify-content: center;
-  background-color: #561217;
-  border: 3px solid #2c6e63;
   width: 70%;
   margin: auto;
 }
@@ -34,7 +57,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fbe5b6;
-  border: 3px solid #2c6e63;
+  border: 3px solid #000000;
   text-align: center;
   overflow: auto;
 }
@@ -54,7 +77,7 @@
   background-color: white;
   box-shadow: inset 0 0 10px #1c1917;
   text-align: justify;
-  padding: 1em;
+  padding: 2em;
   margin: 0;
   position: relative;
 }

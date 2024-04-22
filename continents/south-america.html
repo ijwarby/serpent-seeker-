@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Serpent Seeker</title>
-        <link rel="stylesheet" href="../style.css">
-        <script src="../main-script.js" defer></script>
-        <!-- Google API font styles-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
-    </head>
-
-    <body class="default-body">
-        <ul class="nav-bar default-nav">
-            <div class="nav-links">
-                <a href="../index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="../logo2.png" alt="logo"></a>
-                <div class="right-links">
-                    <a href="map-page.html">Map</a>
-                    <a href="quiz.html">Quiz</a>
-                    <a href="facts.html">Facts</a>
-                </div>
-            </div>
-        </ul>
-
-        <div class="video-container">
-            <video autoplay loop muted playsinline>
-                <source src="pexels-moving-snake-compressed.mp4" type="video/mp4">
-                Your browser does not support this video tag.
-            </video>
+  <head>
+    <meta charset="UTF-8">
+    <title>South America</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/continent-styles.css">
+    <!--scripts -->
+    <script src="../scripts/mapbox-snakes.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
+    <!-- Google API font styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+  <body class="default-body">
+    <main>
+    <ul class="nav-bar default-nav">
+      <li class="nav-links">
+        <a href="../index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="../images/logo2.png" alt="logo"></a>
+        <div class="right-links">
+          <a href="../other/map-page.html">Map</a>
+          <a href="../other/quiz.html">Quiz</a>
+          <a href="facts.html">Facts</a>
         </div>
+      </li>
+    </ul>
 
-        <div class="header default-color">
-            <h1>Serpent Seeker</h1>
-            <p>Explore the world of snakes</p>
+    <div class="header default-color">
+      <h1>Snakes of South America</h1>
+      <p>Serpent Seeker</p>
+    </div>
+
+    <div class ="grid-parent">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img class="image-size" src="../images/bushmaster.jpg" alt="bushmaster">
+          <article class="text-box">
+            <h2 class="snake-species">Bushmaster</h2>
+            <p>Indian Cobra..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+              <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+          </article>
         </div>
+        <div class="grid-item">
+          <img class="image-size" src="../images/yellow-anaconda.JPG" alt="yellow-anaconda">
+        <article class="text-box">
+          <h2 class="snake-species">Yellow Anaconda</h2>
+          <p>Russel Viper...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+            <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+        </article> <!-- text-box -->
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+          <img class="image-size" src="../images/green-anaconda.JPG" alt="green-anaconda">
+        <article class="text-box">
+          <h2 class="snake-species">Green Anaconda</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
+            <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+            <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+          </article> <!-- text-box -->
+    </div> <!-- grid-item -->
+    <div class="grid-item">
+          <img class="image-size " src="../images/copperhead.jpg" alt="copperhead">
+        <article class="text-box">
+          <h2 class="snake-species">Copperhead</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             <button class="show-stats" onclick="getSnakeStats(this)">Show Stats</button>
+             <button class="hide-stats" onclick="hideSnakeStats(this)">Hide Stats</button>
+            </article> <!-- text-box -->
+    </div> <!-- grid-item -->
+  </div>
+</div>
+</main>
+<footer class = "site-footer">
+    <p>Created By: Isaac Warburton - © 2021 Serpent Seeker</p>
+</footer>
+</body>
+</html>

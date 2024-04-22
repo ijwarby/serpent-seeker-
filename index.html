@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Serpent Seeker</title>
-        <link rel="stylesheet" href=".\styles\style.css">
+        <link rel="stylesheet" href="./styles/style.css">
         <!-- Mabox GL JS libary and CSS-->
         <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css'rel='stylesheet' />
+        <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
         <!-- my scripts-->
         <script src="./scripts/mapbox-snakes.js" defer></script>
         <script src="./scripts/main.js" defer></script>
@@ -19,15 +19,16 @@
     </head>
 
     <body class="default-body">
+    <main>
         <ul class="nav-bar default-nav">
-            <div class="nav-links">
+            <li class="nav-links">
                 <a href="index.html" class="home-nav">Serpent Seeker<img class ="top-logo" src="./images/logo2.png" alt="logo"></a>
                 <div class="right-links">
                     <a href="./other/map-page.html">Map</a>
                     <a href="./other/quiz.html">Quiz</a>
                     <a href="facts.html">Facts</a>
                 </div>
-            </div>
+            </li>
         </ul>
 
         <div class="video-container">
@@ -37,17 +38,20 @@
             </video>
         </div>
 
-        <div class="header default-color">
+        <div class="header default-header">
             <h1>Serpent Seeker</h1>
             <p>Explore the world of snakes</p>
         </div>
 
-        
+
+        <!-- Rest of your code -->
+
         <section id = "section1">
             <div class = "intro-container default-color">
                 <div class="title-container">
-                    <h1 id="intro-title">Snakes Around The Globe</h1>
+                    <h2 id="intro-title">Snakes Around The Globe</h2>
                 </div>
+
                 <div class="intro-info">
                     <p>
                     Snakes, remarkable creatures found across every continent except 
@@ -60,45 +64,54 @@
                 </div>
             </div>
         </section>
-    
-        <div class="flexbox-container-map default-color">
-        <!-- MapBox WebMap -->
-        <!-- <div class="map-container"> -->
-            <div id="map"></div>
-       
-            <a href="./other/map-page.html" id="flat-map-link" class="button-style">Go to Flat Continents Map &#x27A7;</a>
-            
-            <div class="dropdown">
-                <button onclick="displayContinents()" id="cont-dropbtn" class="button-style">Explore Continents &#11167</button>
-                    <div id="myDropdown" class="dropdown-content">
-                    <a href="./continents/africa.html">Africa</a>
-                    <a href="./continents/asia.html">Asia</a>
-                    <a href="./continents/europe.html">Europe</a>
-                    <a href="./continents/north-america.html">North America</a>
-                    <a href="./continents/south-america.html">South America</a>
-                    <a href="./continents/australia.html">Australia</a>
-                    </div> <!-- dropdown-content -->
-            </div> <!-- dropdown -->
-                
-            <div id="map-label" class="button-style">
-                <p>Explore the map to uncover the snake species across different regions.</p>
-                </div>
-            </div>
 
-            <div class="flexbox-container default-color">
-                <div class="activities-box">
-                    <img id="quiz-img" src="quiz.png" alt="Quiz">
-                    <p>Test your knowledge with our snake quiz!</p>
-                    <div class="text-background">
-                        <h1>Activities</h1>
-                    </div>
-                </div>
-                <div class="top-facts-box">
-                    <div class="text-background">
-                        <h1>Top Facts</h1>
-                    </div>
-                </div>
-            </div>      
+        <div class="flexbox-container-map default-color">
+            <!-- MapBox WebMap -->
+            <!-- <div class="map-container"> -->
+                <div id="map"></div>
            
+                <a href="./other/map-page.html" id="flat-map-link" class="button-style">Go to Flat Continents Map &#x27A7;</a>
+                
+                <div class="dropdown">
+                    <button onclick="displayContinents()" id="cont-dropbtn" class="button-style">Explore Continents &#11167;</button>
+                        <div id="myDropdown" class="dropdown-content">
+                        <a href="./continents/africa.html">Africa</a>
+                        <a href="./continents/asia.html">Asia</a>
+                        <a href="./continents/europe.html">Europe</a>
+                        <a href="./continents/north-america.html">North America</a>
+                        <a href="./continents/south-america.html">South America</a>
+                        <a href="./continents/australia.html">Australia</a>
+                        </div> <!-- dropdown-content -->
+                </div> <!-- dropdown -->
+                    
+                <div id="map-label" class="button-style">
+                    <p>Explore the map to uncover the snake species across different regions.</p>
+                    </div>
+                </div>
+    
+                <div class="flexbox-container default-color">
+                    <div class="activities-box">
+                        <div class="text-background">
+                            <a href="./other/quiz.html"><h2>Activites</h2></a>
+                    </div>
+                </div>
+                    <div class="activities-box">
+                        <div class="text-background"><
+                            <a href="./other/facts.html"><h2>Top Facts</h2></a>
+                        </div>
+                    </div>
+                </div>   
+    </main>
+    <footer class = "site-footer">
+        <p>Created By: Isaac Warburton - © 2021 Serpent Seeker</p>
+        <p><a href="./other/references.html">click here for references</a></p>
+    </footer
     </body>
 </html>
+
+
+
+
+
+
+

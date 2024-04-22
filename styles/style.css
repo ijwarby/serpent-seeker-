@@ -13,7 +13,6 @@
     letter-spacing: 0.3em;
 }
 
-
 /* Main Navigation, styles across all pages */
 
 .nav-bar {
@@ -29,9 +28,9 @@
     padding: 0;
 }
 
-.default-color {
+.default-header {
     background-color: #171a1c;
-    border-bottom: 3px solid #C06D1F;
+    border-bottom: 2px solid #C06D1F;
 }
 
 .default-nav {
@@ -90,6 +89,9 @@
 /*body styles for index.html*/
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,8 +99,6 @@ body {
     border-radius: 1em;
     background-color: #171a1c;
 }
-
-
 
 .header {
     display: flex;
@@ -111,9 +111,17 @@ body {
     padding: 0.5em;
     font-weight: bold;
     color: white;
-    /* border-top: 3px solid #C06D1F; */
 }
 
+.site-footer {
+    width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 0;
+    position: bottom;
+    bottom: 0;
+}
 
 .intro-container {
     display: flex;
@@ -146,25 +154,11 @@ body {
     position: relative;
 }
 
-.flexbox-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1em;
-    padding: 0.5em;
-    width: 70%;
-    height: auto;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
 /* Map section styles */
 #map {
     flex: 1;
-    width: 100%; /* Or whatever width you want */
-    height: 100%;
+    width: 100%; 
+    height: 800px;
     margin: auto;
   }
 
@@ -205,7 +199,6 @@ body {
     width: 190px;
     top: 8%;
     background-color: #523A28;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -233,13 +226,13 @@ body {
     cursor: pointer;
 }
 
+
 .button-style {
     position: absolute;
-    font-size: 16px; /* Or whatever font size you want */
+    font-size: 16px; 
     text-decoration: none;
     font-weight: bold;
     background-color: #523A283b;
-    color: white;
     cursor: pointer;
     text-align: center;
     width: auto;
@@ -264,6 +257,60 @@ body {
     padding: 0;
 }
 
+/* Other sections */
+.flexbox-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    padding: 0.5em;
+    width: 70%;
+    margin: 1em auto;
+    height: auto;
+    align-items: stretch;
+    position: relative;
+  }
+
+  .activities-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    width: 40vw;
+    background-image: url(/images/freepik-pattern.jpg);
+    border: 3px solid #C06D1F;
+    margin: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-background h2 {
+    text-align: center;
+    font-size: auto;
+    color: #fffc5d; /* A darker brown for contrast */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background color */
+    padding: 0.5em; /* Add some padding to give the text some room */
+}
+
+
+.default-footer {
+    background-color: #C06D1F; /* Change to your preferred color */
+    color: #fff; /* Change text color to white */
+    padding: 20px 0; /* Add some vertical padding */
+    text-align: center; /* Center the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-info p {
+    margin: 0; /* Remove default paragraph margins */
+}
+
+
+
 
 
 
@@ -271,17 +318,38 @@ body {
 
 @media screen and (max-width: 1000px) {
     
-    .flexbox-container {
+    .header {
         width: 90%;
     }
 
-    #map-label, #map {
-        display: none;
+    .intro-container {
+        width: 70%;
     }
 
+    .flexbox-container-map {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+        padding: 0.5em;
+        width: 70%;
+        height: 400px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    #map-label{
+        display:none;
+    }
 
-    .flexbox-container > div {
-        flex: 1;
+    #flat-map-link {
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+       
     }
 
     .world-info {
@@ -290,6 +358,7 @@ body {
 
     #map {
         width: 100%;
+        height: auto;
     }
 
     .world-info p {

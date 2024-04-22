@@ -1,0 +1,1199 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaFk",
+        "wikidata": "Q965",
+        "short_code": "bf",
+        "place_name": "Burkina Faso",
+        "species": "Black Mamba"
+      },
+      "geometry": {
+        "coordinates": [
+          36.343892,
+          1.294865
+        ],
+        "type": "Point"
+      },
+      "id": "0200da0d75c622d63fad02514e781c92"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Grass Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          14.289092,
+          41.552264
+        ],
+        "type": "Point"
+      },
+      "id": "02337ecca4c74007d9a4724fb6110b50"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJb2c",
+        "wikidata": "Q32",
+        "short_code": "lu",
+        "place_name": "Luxembourg",
+        "species": "Green Whip"
+      },
+      "geometry": {
+        "coordinates": [
+          10.441254,
+          52.481021
+        ],
+        "type": "Point"
+      },
+      "id": "08b2534a7f816411257b816cdbaa9bdc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Coastal Taipan"
+      },
+      "geometry": {
+        "coordinates": [
+          111.213952,
+          -7.47349
+        ],
+        "type": "Point"
+      },
+      "id": "111a9d8d521cbf3699b405bb620df311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJazA",
+        "wikidata": "Q142",
+        "short_code": "fr",
+        "place_name": "France",
+        "species": "Green Whip"
+      },
+      "geometry": {
+        "coordinates": [
+          2.618786,
+          47.824904
+        ],
+        "type": "Point"
+      },
+      "id": "126a0e4eb15d5a5cd9308aad0e9b5bc0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Grass Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          -0.558625,
+          52.343905
+        ],
+        "type": "Point"
+      },
+      "id": "1d50395e22228e2d318fd78543062e54"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpDY1M0",
+        "wikidata": "Q990293",
+        "place_name": "Carolina, Puerto Rico",
+        "species": "Coral Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          -65.957024,
+          18.380851
+        ],
+        "type": "Point"
+      },
+      "id": "1d7e880e77cee944d00b717685a3e65b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJbUU",
+        "wikidata": "Q8646",
+        "short_code": "hk",
+        "place_name": "Hong Kong",
+        "species": "King Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          114.16255,
+          22.279356
+        ],
+        "type": "Point"
+      },
+      "id": "2841c5e1f4477821f63f5e9624db775e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJa0U",
+        "wikidata": "Q736",
+        "short_code": "ec",
+        "place_name": "Ecuador",
+        "species": "Yellow Anaconda"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.458511,
+          -3.920757
+        ],
+        "type": "Point"
+      },
+      "id": "2f4a9478ac9a20c5650d11df93818f2b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaUE",
+        "wikidata": "Q155",
+        "short_code": "br",
+        "place_name": "Brazil",
+        "species": "Green Anaconda "
+      },
+      "geometry": {
+        "coordinates": [
+          -66.060736,
+          -1.740891
+        ],
+        "type": "Point"
+      },
+      "id": "3040bd1675617bfbb343fd5cfeceb226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJbWM",
+        "wikidata": "Q252",
+        "short_code": "id",
+        "place_name": "Indonesia",
+        "species": "Green Tree Python"
+      },
+      "geometry": {
+        "coordinates": [
+          106.827215,
+          -6.175553
+        ],
+        "type": "Point"
+      },
+      "id": "384a6684700e255208289f700bda1aef"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBeVRz",
+        "wikidata": "Q1494",
+        "short_code": "US-MS",
+        "place_name": "Mississippi, United States",
+        "species": "Eastern Diamondback Rattlesnake"
+      },
+      "geometry": {
+        "coordinates": [
+          -89.718167,
+          32.856673
+        ],
+        "type": "Point"
+      },
+      "id": "4172f94b9bae3301af865dd70174a5e9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpCZVRz",
+        "wikidata": "Q812",
+        "short_code": "US-FL",
+        "place_name": "Florida, United States",
+        "species": "Eastern Diamondback Rattlesnake"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.033629,
+          28.944464
+        ],
+        "type": "Point"
+      },
+      "id": "426a1a7b84e04df1b6c6a031818251dd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJa2M",
+        "wikidata": "Q115",
+        "short_code": "et",
+        "place_name": "Ethiopia",
+        "species": "Black Mamba"
+      },
+      "geometry": {
+        "coordinates": [
+          39.616031,
+          8.626219
+        ],
+        "type": "Point"
+      },
+      "id": "456f5b38f23e0644e4be5664a7289ad6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdEE",
+        "wikidata": "Q1041",
+        "short_code": "sn",
+        "place_name": "Senegal",
+        "species": "Puff Adder"
+      },
+      "geometry": {
+        "coordinates": [
+          20.245406,
+          -17.723081
+        ],
+        "type": "Point"
+      },
+      "id": "49eeebbeafc4d7e5c9de1586560a79b1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "King Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          78.025333,
+          26.780452
+        ],
+        "type": "Point"
+      },
+      "id": "49fe3769feae71a47175bbe6fdc0263d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJakU",
+        "wikidata": "Q148",
+        "short_code": "cn",
+        "place_name": "China",
+        "species": "King Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          101.901875,
+          35.486702
+        ],
+        "type": "Point"
+      },
+      "id": "4f607feedac2ac5fb03a181adbe98d06"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJa1k",
+        "wikidata": "Q29",
+        "short_code": "es",
+        "place_name": "Spain",
+        "species": "Green Whip "
+      },
+      "geometry": {
+        "coordinates": [
+          -4.055685,
+          41.294855
+        ],
+        "type": "Point"
+      },
+      "id": "524fc71200eecdd7e7cfcf8f64bbc464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpCc1pQ",
+        "wikidata": "Q23159",
+        "place_name": "Dorset, England, United Kingdom",
+        "species": "Smooth Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.805639,
+          50.911628
+        ],
+        "type": "Point"
+      },
+      "id": "54351bf18189b2d325fb9e3971e8a626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpCZ1Rz",
+        "wikidata": "Q816",
+        "short_code": "US-AZ",
+        "place_name": "Arizona, United States",
+        "species": "Western Diamondback Rattlesnake"
+      },
+      "geometry": {
+        "coordinates": [
+          -111.422127,
+          34.220261
+        ],
+        "type": "Point"
+      },
+      "id": "54fb90abfcea30ed995275cd5dac3a05"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBb1Rz",
+        "wikidata": "Q1415",
+        "short_code": "US-IN",
+        "place_name": "Indiana, United States",
+        "species": "Cottonmouth"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.284607,
+          39.918407
+        ],
+        "type": "Point"
+      },
+      "id": "55834b102eb68f1887a59db92a5a90d5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Bushmaster"
+      },
+      "geometry": {
+        "coordinates": [
+          -56.250073,
+          -13.399316
+        ],
+        "type": "Point"
+      },
+      "id": "55e06617317cd64b787645d994deceb5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJbFE",
+        "wikidata": "Q117",
+        "short_code": "gh",
+        "place_name": "Ghana",
+        "species": "Gaboon Viper"
+      },
+      "geometry": {
+        "coordinates": [
+          13.767456,
+          -1.1584
+        ],
+        "type": "Point"
+      },
+      "id": "55f58cb90baee532eb76be6d3b666a57"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpaRTg",
+        "wikidata": "Q25",
+        "short_code": "GB-WLS",
+        "place_name": "Wales, United Kingdom",
+        "species": "European Adder"
+      },
+      "geometry": {
+        "coordinates": [
+          7.854846,
+          59.991579
+        ],
+        "type": "Point"
+      },
+      "id": "5b9ae4ade131cee0765d6df2d0693cff"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaDQ",
+        "wikidata": "Q750",
+        "short_code": "bo",
+        "place_name": "Bolivia",
+        "species": "Bushmaster"
+      },
+      "geometry": {
+        "coordinates": [
+          -64.269605,
+          -16.970662
+        ],
+        "type": "Point"
+      },
+      "id": "5f8030171829e0de08b188c44d67e765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaW8",
+        "wikidata": "Q929",
+        "short_code": "cf",
+        "place_name": "Central African Republic",
+        "species": "Gaboon Viper"
+      },
+      "geometry": {
+        "coordinates": [
+          20.938431,
+          6.813077
+        ],
+        "type": "Point"
+      },
+      "id": "602a8574e68e65440a0437e406a4b142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJbWM",
+        "wikidata": "Q252",
+        "short_code": "id",
+        "place_name": "Indonesia",
+        "species": "King Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          106.827215,
+          -6.175553
+        ],
+        "type": "Point"
+      },
+      "id": "6101bb8c9b817e5178ea9e0364a16050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpDWVpQ",
+        "wikidata": "Q23204",
+        "place_name": "Hampshire, England, United Kingdom",
+        "species": "Smooth Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          2.579974,
+          45.25025
+        ],
+        "type": "Point"
+      },
+      "id": "61904facef401363f14d17e2212c31fd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJb1E",
+        "wikidata": "Q854",
+        "short_code": "lk",
+        "place_name": "Sri Lanka",
+        "species": "Indian Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          80.704727,
+          7.608085
+        ],
+        "type": "Point"
+      },
+      "id": "6423372bb473175c8a6490c3d845be59"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpKRTg",
+        "wikidata": "Q21",
+        "short_code": "GB-ENG",
+        "place_name": "England, United Kingdom",
+        "species": "European Adder"
+      },
+      "geometry": {
+        "coordinates": [
+          -1.577254,
+          52.963898
+        ],
+        "type": "Point"
+      },
+      "id": "65fbe8784c6c5b56b8191789eabac731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJZ0k",
+        "wikidata": "Q228",
+        "short_code": "ad",
+        "place_name": "Andorra",
+        "species": "Green Whip"
+      },
+      "geometry": {
+        "coordinates": [
+          1.576766,
+          42.548654
+        ],
+        "type": "Point"
+      },
+      "id": "6df8b51cff32a5dc9d525aef52748457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJakk",
+        "wikidata": "Q739",
+        "short_code": "co",
+        "place_name": "Colombia",
+        "species": "Bushmaster"
+      },
+      "geometry": {
+        "coordinates": [
+          -70.183972,
+          3.819561
+        ],
+        "type": "Point"
+      },
+      "id": "6e28040ae076b149fdf7555a9317c37e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpSRTg",
+        "wikidata": "Q22",
+        "short_code": "GB-SCT",
+        "place_name": "Scotland, United Kingdom",
+        "species": "European Adder"
+      },
+      "geometry": {
+        "coordinates": [
+          -4.095892,
+          56.734282
+        ],
+        "type": "Point"
+      },
+      "id": "702ffa6579c8b0cccab4a248f05a1138"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBMlRz",
+        "wikidata": "Q1522",
+        "short_code": "US-NM",
+        "place_name": "New Mexico, United States",
+        "species": "Western Diamondback Rattlesnake"
+      },
+      "geometry": {
+        "coordinates": [
+          -105.99835,
+          34.324856
+        ],
+        "type": "Point"
+      },
+      "id": "73698b108d66c89543f112cb63950441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJc1E",
+        "wikidata": "Q851",
+        "short_code": "sa",
+        "place_name": "Saudi Arabia",
+        "species": "Puff Adder"
+      },
+      "geometry": {
+        "coordinates": [
+          44.652426,
+          23.384784
+        ],
+        "type": "Point"
+      },
+      "id": "785905ff9beb9855a48adcc9c1c25e35"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaFE",
+        "wikidata": "Q902",
+        "short_code": "bd",
+        "place_name": "Bangladesh",
+        "species": "Indian Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          90.077974,
+          24.347607
+        ],
+        "type": "Point"
+      },
+      "id": "8dea38fbe2e297b340fe3b03772cf35b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJcUU",
+        "wikidata": "Q1029",
+        "short_code": "mz",
+        "place_name": "Mozambique",
+        "species": "Boomslang"
+      },
+      "geometry": {
+        "coordinates": [
+          34.750197,
+          -18.087466
+        ],
+        "type": "Point"
+      },
+      "id": "900973e1dc18dc2b08cade09a0e8eefe"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Green Tree Python"
+      },
+      "geometry": {
+        "coordinates": [
+          142.807908,
+          -14.735088
+        ],
+        "type": "Point"
+      },
+      "id": "911a223b521619a6b3fdb03044d76840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaVE",
+        "wikidata": "Q963",
+        "short_code": "bw",
+        "place_name": "Botswana",
+        "species": "Boomslang"
+      },
+      "geometry": {
+        "coordinates": [
+          5.414616,
+          7.896926
+        ],
+        "type": "Point"
+      },
+      "id": "91e8a48d1ca6f4bc3e77a56c492bbfae"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaUE",
+        "wikidata": "Q155",
+        "short_code": "br",
+        "place_name": "Brazil",
+        "species": "Green Anaconda "
+      },
+      "geometry": {
+        "coordinates": [
+          -52.986145,
+          -9.164572
+        ],
+        "type": "Point"
+      },
+      "id": "91ea68b73ddfcc4debebdfe9a7085a76"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpCT1Rz",
+        "wikidata": "Q173",
+        "short_code": "US-AL",
+        "place_name": "Alabama, United States",
+        "species": "Eastern Diamondback Rattlesnake"
+      },
+      "geometry": {
+        "coordinates": [
+          -84.725357,
+          31.61248
+        ],
+        "type": "Point"
+      },
+      "id": "92bdc252c8e595f830a160084c51f6c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdGc",
+        "wikidata": "Q1050",
+        "short_code": "sz",
+        "place_name": "Eswatini",
+        "species": "Boomslang"
+      },
+      "geometry": {
+        "coordinates": [
+          31.497528,
+          -26.562642
+        ],
+        "type": "Point"
+      },
+      "id": "9709a6814b593df6c217b342e11bc641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdjQ",
+        "place_name": "South Africa",
+        "short_code": "za",
+        "wikidata": "Q258",
+        "species": "Puff Adder"
+      },
+      "geometry": {
+        "coordinates": [
+          23.835092,
+          -28.370394
+        ],
+        "type": "Point"
+      },
+      "id": "999811610770979dfc988e8f84a62835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "European Adder"
+      },
+      "geometry": {
+        "coordinates": [
+          20.52459,
+          53.239705
+        ],
+        "type": "Point"
+      },
+      "id": "a0068c9dfba0b73d4c1889809e91b1e3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpCQ1Ju",
+        "wikidata": "Q5095",
+        "short_code": "ID-PA",
+        "place_name": "Papua, Indonesia",
+        "species": "Green Tree Python"
+      },
+      "geometry": {
+        "coordinates": [
+          140.703738,
+          -2.538753
+        ],
+        "type": "Point"
+      },
+      "id": "a0af063d34317e23fc9348e83ec3da0e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJcnc",
+        "wikidata": "Q733",
+        "short_code": "py",
+        "place_name": "Paraguay",
+        "species": "Yellow Anaconda"
+      },
+      "geometry": {
+        "coordinates": [
+          -58.391023,
+          -23.23621
+        ],
+        "type": "Point"
+      },
+      "id": "ac753483c6c901509b183a2b281cb1db"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJbXM",
+        "wikidata": "Q668",
+        "short_code": "in",
+        "place_name": "India",
+        "species": "Indian Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          76.052793,
+          22.877306
+        ],
+        "type": "Point"
+      },
+      "id": "b395f542874202f43be4870f12b66415"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdjQ",
+        "wikidata": "Q258",
+        "short_code": "za",
+        "place_name": "South Africa",
+        "species": "Black Mamba"
+      },
+      "geometry": {
+        "coordinates": [
+          23.939881,
+          -28.37668
+        ],
+        "type": "Point"
+      },
+      "id": "c1dc12922b2e6a2728ad287e7cc94df5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Copperhead",
+        "mapbox_id": "dXJuOm1ieHBsYzpCT1Rz",
+        "wikidata": "Q173",
+        "place_name": "Alabama, United States",
+        "short_code": "US-AL"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.866207,
+          33.297856
+        ],
+        "type": "Point"
+      },
+      "id": "ceb64903d7825ddb165edb0a18ae98a4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdjQ",
+        "place_name": "South Africa",
+        "short_code": "za",
+        "wikidata": "Q258",
+        "species": "Boomslang"
+      },
+      "geometry": {
+        "coordinates": [
+          23.884118,
+          -28.462114
+        ],
+        "type": "Point"
+      },
+      "id": "cf2e65e9280cad68eecba786e50d8896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBc1Rz",
+        "wikidata": "Q1439",
+        "short_code": "US-TX",
+        "place_name": "Texas, United States",
+        "species": "Western Diamondback Rattlesnake"
+      },
+      "geometry": {
+        "coordinates": [
+          -98.822318,
+          31.803973
+        ],
+        "type": "Point"
+      },
+      "id": "d024991e031f3462b6baba24319fefbf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpFcVpQ",
+        "wikidata": "Q23276",
+        "place_name": "Surrey, England, United Kingdom",
+        "species": "Smooth Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          -0.430629,
+          51.321511
+        ],
+        "type": "Point"
+      },
+      "id": "d318ed678bb52bc3123704f60c47c919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJaXc",
+        "wikidata": "Q39",
+        "short_code": "ch",
+        "place_name": "Switzerland",
+        "species": "Green Whip"
+      },
+      "geometry": {
+        "coordinates": [
+          8.234391,
+          46.802495
+        ],
+        "type": "Point"
+      },
+      "id": "d32cb0eda916d7b683d32fec52284972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Coral Snake",
+        "place_name": "Louisiana, United States",
+        "mapbox_id": "dXJuOm1ieHBsYzpCRVRz",
+        "short_code": "US-LA",
+        "wikidata": "Q1588"
+      },
+      "geometry": {
+        "coordinates": [
+          -90.651083,
+          30.954789
+        ],
+        "type": "Point"
+      },
+      "id": "d45573166f7f7005ef40a6fba6138bad"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdkU",
+        "wikidata": "Q717",
+        "short_code": "ve",
+        "place_name": "Venezuela",
+        "species": "Green Anaconda"
+      },
+      "geometry": {
+        "coordinates": [
+          -65.801997,
+          7.61957
+        ],
+        "type": "Point"
+      },
+      "id": "d4fbdae757d5c765e27d7e44f3f75156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJbVE",
+        "wikidata": "Q224",
+        "short_code": "hr",
+        "place_name": "Croatia",
+        "species": "Green Whip"
+      },
+      "geometry": {
+        "coordinates": [
+          16.679106,
+          45.664952
+        ],
+        "type": "Point"
+      },
+      "id": "d66ed31083a65922220d9459b1ac18e0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Grass Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          23.597186,
+          48.916796
+        ],
+        "type": "Point"
+      },
+      "id": "d6ea847d51b1a31b177793aa5cf77d51"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpBV1Rz",
+        "wikidata": "Q1370",
+        "short_code": "US-VA",
+        "place_name": "Virginia, United States",
+        "species": "Cottonmouth"
+      },
+      "geometry": {
+        "coordinates": [
+          -78.619052,
+          37.677592
+        ],
+        "type": "Point"
+      },
+      "id": "d84c35636cb0233831eb92bfd89c2910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdkU",
+        "wikidata": "Q717",
+        "short_code": "ve",
+        "place_name": "Venezuela",
+        "species": "Bushmaster"
+      },
+      "geometry": {
+        "coordinates": [
+          -83.90318,
+          9.931815
+        ],
+        "type": "Point"
+      },
+      "id": "d9753a57f855f1188cac7b26f9029f8e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Copperhead"
+      },
+      "geometry": {
+        "coordinates": [
+          -72.076264,
+          43.045813
+        ],
+        "type": "Point"
+      },
+      "id": "dbe64023b5e7fc9525d930a223be2ebb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Grass Snake"
+      },
+      "geometry": {
+        "coordinates": [
+          17.703966,
+          51.317626
+        ],
+        "type": "Point"
+      },
+      "id": "e06a3822621e38871df8fbf464881a35"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJcDQ",
+        "wikidata": "Q1020",
+        "short_code": "mw",
+        "place_name": "Malawi",
+        "species": "Gaboon Viper"
+      },
+      "geometry": {
+        "coordinates": [
+          35.923569,
+          -9.754935
+        ],
+        "type": "Point"
+      },
+      "id": "e7bd649d54a4e227337a78d677f846f7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJckE",
+        "wikidata": "Q419",
+        "short_code": "pe",
+        "place_name": "Peru",
+        "species": "Yellow Anaconda"
+      },
+      "geometry": {
+        "coordinates": [
+          -75.311131,
+          -10.151092
+        ],
+        "type": "Point"
+      },
+      "id": "e8016699aabc0c9765074364af842793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Coastal Taipan"
+      },
+      "geometry": {
+        "coordinates": [
+          131.574145,
+          -15.581173
+        ],
+        "type": "Point"
+      },
+      "id": "eef4c0f3881ce5f4d40060dcfb4376e0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJdE0",
+        "wikidata": "Q958",
+        "short_code": "ss",
+        "place_name": "South Sudan",
+        "species": "Black Mamba"
+      },
+      "geometry": {
+        "coordinates": [
+          26.015141,
+          3.153386
+        ],
+        "type": "Point"
+      },
+      "id": "f7078636c8c27d981ef040aba20dc717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJclE",
+        "wikidata": "Q843",
+        "short_code": "pk",
+        "place_name": "Pakistan",
+        "species": "Russells Viper"
+      },
+      "geometry": {
+        "coordinates": [
+          71.404374,
+          30.205956
+        ],
+        "type": "Point"
+      },
+      "id": "f9587a98fe3cb4b4e0262d1ad4b17b59"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJck0",
+        "wikidata": "Q928",
+        "short_code": "ph",
+        "place_name": "Philippines",
+        "species": "King Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          120.981779,
+          14.586788
+        ],
+        "type": "Point"
+      },
+      "id": "fa15ffd90a7eb7be933a2b41b4ce33c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJbXM",
+        "wikidata": "Q668",
+        "short_code": "in",
+        "place_name": "India ",
+        "species": "Russells Viper"
+      },
+      "geometry": {
+        "coordinates": [
+          76.195629,
+          16.244605
+        ],
+        "type": "Point"
+      },
+      "id": "fe57087d3916f88536296d060977f2d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mapbox_id": "dXJuOm1ieHBsYzpJclE",
+        "wikidata": "Q843",
+        "short_code": "pk",
+        "place_name": "Pakistan",
+        "species": "indian Cobra"
+      },
+      "geometry": {
+        "coordinates": [
+          67.695236,
+          28.186384
+        ],
+        "type": "Point"
+      },
+      "id": "ffd5df6d8a89fd04e296bb82497ee7f1"
+    }
+  ],
+  "type": "FeatureCollection"
+}

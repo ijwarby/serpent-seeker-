@@ -1,16 +1,17 @@
-
-// Function to change the color of the header, body, and navigation bar based on the page
 function changeColor() {
+  /*Function to control color change for pages, modifies CSS class depending on page name*/
   var header = document.querySelector(".header");
   var body = document.body;
   var colorElements = document.querySelectorAll(".default-color");
   var navBar = document.querySelector(".nav-bar");
   var pageName = window.location.pathname.split("/").pop().split(".")[0];
+  var footer = document.querySelector(".footer");
 
   if (pageName === "index") {
     navBar.classList.add("default-nav");
     header.classList.add("default-header");
     body.classList.add("default-body");
+    footer.classList.add("default-footer");
     colorElements.forEach(function(element) {
       element.classList.add("default-color");
     });
@@ -28,14 +29,18 @@ function changeColor() {
   }
 };
 
-// Function to retrieve the dropdown menu 
+
 function displayContinents() {
+  /*Function to display continents in dropdown menu, called from HTML*/
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Function to close the dropdown menu if the user clicks outside of it
-// Reference: https://www.w3schools.com/howto/howto_js_dropdown.asp
+
 function closeDropdowns(event) {
+  /*Function to close dropdown menu when clicked outside of it.
+    iterate through each dropdown item under the class name "dropdown-content", 
+    checks to see if the dropdown is open, and if so, closes it
+    Reference: https://www.w3schools.com/howto/howto_js_dropdown.asp */
   if (!event.target.matches('#cont-dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
