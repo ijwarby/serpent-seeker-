@@ -277,7 +277,7 @@ body {
     align-items: center;
     padding: 4em;
     width: 40vw;
-    background-image: url(/images/freepik-pattern.jpg);
+    background-image: url(./images/freepik-pattern.jpg);
     border: 3px solid #C06D1F;
     margin: 2em;
 }
