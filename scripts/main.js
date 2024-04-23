@@ -5,14 +5,12 @@ function changeColor() {
   var colorElements = document.querySelectorAll(".default-color");
   var navBar = document.querySelector(".nav-bar");
   var pageName = window.location.pathname.split("/").pop().split(".")[0];
-  var footer = document.querySelector(".footer");
 
   if (pageName === "index") {
     navBar.classList.add("default-nav");
     header.classList.add("default-header");
     body.classList.add("default-body");
-    footer.classList.add("default-footer");
-    colorElements.forEach(function(element) {
+    colorElements.forEach(function(element) { 
       element.classList.add("default-color");
     });
   } else if (pageName !== "index") {

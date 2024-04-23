@@ -3,17 +3,29 @@
   margin-bottom: 0.5em;
 }
 
-.quiz-body, .map-page-body {
+
+.quiz-flex  {
   background-image: url(../images/pexels-mike-fallarme-413195.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 100vh; /* Add this */
+  margin: 3em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #7de7ab;
+  border-radius: 5px;
+  padding: 1em;
+  height: 100vh;
 }
 
 .quiz-color, .map-page-color{
   background-color: #032c0f;
   border-bottom: 3px solid #7de7ab;
+}
+
+.quiz-body, .map-page-body {
+  background-color: #141209;
 }
 
 .facts-nav {
