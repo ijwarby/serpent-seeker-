@@ -13,19 +13,19 @@ const correctAnswers = {
 };
 
 function startQuiz() {
-    /* initalise quiz, by hiding the title and start button, display the first question and next button */
+    /* function to start the quiz , hides the start button and displays the first question, 
+    starts the countdown timer and resets score. */
     document.getElementById("quiz-title").style.display = "none";
     document.getElementById("start-button").style.display = "none";
     document.getElementById("question1").style.display = "block";
     document.getElementById("next-1").style.display = "block";
-    // Start the countdown timer and load the progress bar
     countdownIntervalId = startCountdown();
-    score = 0; // Reset the score
+    score = 0; 
+    hideScoreMessage(); 
 }
 
-
 function startCountdown() {
-    /* initialize the countdown timer, create a countdown interval for each question.
+        /* initialize the countdown timer, create a countdown interval for each question.
     libaries: https://sweetalert2.github.io/ 
     references: https://sweetalert2.github.io/#usage , 
     https://www.w3schools.com/jsref/met_win_setinterval.asp
@@ -62,78 +62,59 @@ function startCountdown() {
 }
 
 function nextQuestion(currentQuestionId, nextQuestionId, currentNextButtonId, nextNextButtonId) {
-    /* initialize the next question, create a function to move to the next question.
+    /* initialize the next question, hides the current question and displays the next question,
+    hides the current "Next" button and shows the next one, starts the countdown timer.
     libaries: https://sweetalert2.github.io/
     references: https://sweetalert2.github.io/#usage
     https://www.w3schools.com/jsref/jsref_slice_array.asp
     */
-    if (!nextQuestionId) {
-        displayCompletionMessage();
-        return;
-    }
 
-    clearInterval(countdownIntervalId); // Clear the countdown interval
-
-    // Hide the current question and show the next one
+    clearInterval(countdownIntervalId); 
     document.getElementById(currentQuestionId).style.display = "none";
     document.getElementById(nextQuestionId).style.display = "block";
-
-    // Hide the current "Next" button and show the next one
     document.getElementById(currentNextButtonId).style.display = "none";
     document.getElementById(nextNextButtonId).style.display = "block";
     countdownIntervalId = startCountdown();
-
-    // Update the question number and load the progress bar
-    const questionNumber = parseInt(nextQuestionId.slice(-1));
-}
-
-
-
-function displayCompletionMessage() {
-    /*display the completion message, create a function to display the final score.*/
-    document.getElementById("quiz-complete").style.display = "flex";
-    viewScore();
 }
 
 function viewScore() {
-    /*display final score html elements*/
-    document.getElementById("score").innerHTML = score;
+    /* display final score html elements */
+    const scoreValue = document.getElementById("score");
+    scoreValue.innerText = score;
+    document.getElementById("score-container").style.display = "block";
     document.getElementById("score-message").style.display = "block";
-    document.getElementById("correct-answers").innerHTML = score;
-    document.getElementById("end-quiz").style.display = "block";
+    document.getElementById("view-score").style.display = "none";
+    document.getElementById("end-quiz").style.display = "block"; // Show End Quiz button
 }
 
-
 function endQuiz() {
-    /*Removes timer and progres bar elements, resets the quiz to start again*/
+    /* Removes timer and progress bar elements, resets the quiz */
     clearInterval(countdownIntervalId); // Clear the countdown interval
-
     // Loops through all questions and hides them
     for (let i = 1; i <= totalQuestions; i++) {
         document.getElementById(`question${i}`).style.display = "none";
         document.getElementById(`next-${i}`).style.display = "none";
     }
+
     // Hide elements 
     document.getElementById("quiz-complete").style.display = "none";
-    document.getElementById("score-message").style.display = "none";
-    document.getElementById("end-quiz").style.display = "none";
+    document.getElementById("end-quiz").style.display = "block"; // Show End Quiz button
     document.getElementById("countdown").style.display = "none";
 
     // Show the title and start button to restart the quiz
     document.getElementById("quiz-title").style.display = "block";
     document.getElementById("start-button").style.display = "block";
+    hideScoreMessage(); // Hide the score message
 }
 
-
 function checkAnswer(questionId, correctAnswer) {
-    /*uses correct answers object to check if the selected answer is correct,
+     /*uses correctAnswers object to check if the selected answer is correct,
     increment score if correct, display a message if correct or incorrect,
     display a message if no answer is selected
     references: https://sweetalert2.github.io/ */
     const selectedOption = document.getElementsByName(questionId);
     let selected = false;
 
-    // Loop through the selected options to check if an answer is selected
     for (let i = 0; i < selectedOption.length; i++) {
         if (selectedOption[i].checked) {
             selected = true;
@@ -166,29 +147,23 @@ function checkAnswer(questionId, correctAnswer) {
     }
 }
 
-function assignEventListeners(totalQuestions) {
-    /* This function assigns event listeners to the "Next" button for each question */
-
+function assignEventListeners() {
+    // Assign event listeners to next buttons for each question
     for (let i = 1; i <= totalQuestions; i++) {
-        // Get the "Next" button element for the current question
-        const nextButton = document.querySelector('[id="next-' + i + '"]');
-        
-        // Add a click event listener to the "Next" button
+        const nextButton = document.querySelector(`#next-${i}`);
         nextButton.addEventListener("click", function() {
-            console.log("Question " + i + " Next button clicked")
-            const questionId = 'question' + i;
+            const questionId = `question${i}`;
             const correctAnswer = correctAnswers[questionId];
             checkAnswer(questionId, correctAnswer);
-            
-            // Move to the next question if not the last one
             if (i < totalQuestions) {
-                const nextQuestionId = 'question' + (i + 1);
-                const currentNextButtonId = 'next-' + i;
-                const nextNextButtonId = 'next-' + (i + 1);
+                const nextQuestionId = `question${i + 1}`;
+                const currentNextButtonId = `next-${i}`;
+                const nextNextButtonId = `next-${i + 1}`;
                 nextQuestion(questionId, nextQuestionId, currentNextButtonId, nextNextButtonId);
             } else {
-                // Display completion message if it's the last question
-                nextQuestion(questionId, "quiz-complete");
+                nextQuestion(questionId, "quiz-complete", `next-${i}`, null);
+                displayCompletionMessage(); // Display completion message
+                viewScore(); // Show score and End Quiz button
             }
         });
     }
@@ -196,3 +171,16 @@ function assignEventListeners(totalQuestions) {
 
 // Call the function to assign event listeners
 assignEventListeners(totalQuestions);
+
+function hideScoreMessage() {
+    /* Hide the score message */
+    document.getElementById("score-container").style.display = "none";
+    document.getElementById("score-message").style.display = "none";
+    document.getElementById("view-score").style.display = "block"; // Show View Score button
+    document.getElementById("end-quiz").style.display = "none"; // Hide End Quiz button
+}
+
+function displayCompletionMessage() {
+    /* Display completion message */
+    document.getElementById("quiz-complete").style.display = "block";
+}
