@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', loadMap);
 let snakes = {
     'Puff Adder': {
         species: 'Puff Adder',
-        imagePath: './images/puff-adder.jpg',
+        imagePath: '../images/puff-adder.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 4 feet',
         weight: '5 to 6 pounds',
@@ -64,7 +64,7 @@ let snakes = {
     },
     'Black Mamba': {
         species: 'Black Mamba',
-        imagePath: './images/black-mamba.jpg',
+        imagePath: '../images/black-mamba.jpg',
         colors: 'Grey, brown, olive, yellow',
         length: '6 to 14 feet',
         weight: '1.6 to 3.5 pounds',
@@ -73,7 +73,7 @@ let snakes = {
     },
     'Boomslang': {
         species: 'Boomslang',
-        imagePath: './images/boomslang.jpg',
+        imagePath: '../images/boomslang.jpg',
         colors: 'Green, brown, black',
         length: '4 to 6 feet',
         weight: '0.2 to 0.4 pounds',
@@ -82,7 +82,7 @@ let snakes = {
     },
     'Gaboon Viper': {
         species: 'Gaboon Viper',
-        imagePath: './images/gaboon-viper.jpg',
+        imagePath: '../images/gaboon-viper.jpg',
         colors: 'Brown, grey, yellow, purple',
         length: '4 to 6 feet',
         weight: '15 to 20 pounds',
@@ -91,7 +91,7 @@ let snakes = {
     },
     'Indian Cobra': {
         species: 'Indian Cobra',
-        imagePath: './images/indian-cobra.jpg',
+        imagePath: '../images/indian-cobra.jpg',
         colors: 'Black, brown, yellow',
         length: '4 to 7 feet',
         weight: '3 to 5 pounds',
@@ -100,7 +100,7 @@ let snakes = {
     },
     'Russells Viper': {
         species: 'Russell\'s Viper',
-        imagePath: './images/russell-viper.jpg',
+        imagePath: '../images/russell-viper.jpg',
         colors: 'Brown, grey, yellow',
         length: '3 to 5 feet',
         weight: '5 to 7 pounds',
@@ -109,7 +109,7 @@ let snakes = {
     },
     'King Cobra': {
         species: 'King Cobra',
-        imagePath: './images/king-cobra.jpg',
+        imagePath: '../images/king-cobra.jpg',
         colors: 'Black, brown, yellow',
         length: '10 to 18 feet',
         weight: '13 to 20 pounds',
@@ -118,7 +118,7 @@ let snakes = {
     },
     'Green Tree Python': {
         species: 'Green Tree Python',
-        imagePath: './images/green-tree.jpg',
+        imagePath: '../images/green-tree.jpg',
         colors: 'Green, yellow, blue',
         length: '4 to 6 feet',
         weight: '2 to 3 pounds',
@@ -127,7 +127,7 @@ let snakes = {
     },
     'European Adder': {
         species: 'European Adder',
-        imagePath: './images/european-adder.jpg',
+        imagePath: '../images/european-adder.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '1 to 2 feet',
         weight: '0.2 to 0.4 pounds',
@@ -136,7 +136,7 @@ let snakes = {
     },
     'Green Whip': {
         species: 'Green Whip Snake',
-        imagePath: './images/green-whip-snake.jpg',
+        imagePath: '../images/green-whip-snake.jpg',
         colors: 'Green, yellow, black',
         length: '3 to 4 feet',
         weight: '0.2 to 0.4 pounds',
@@ -146,7 +146,7 @@ let snakes = {
     },
     'Smooth Snake': {
         species: 'Smooth Snake',
-        imagePath:  './images/smooth-snake.jpg',
+        imagePath:  '../images/smooth-snake.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '1 to 2 feet',
         weight: '0.2 to 0.4 pounds',
@@ -155,7 +155,7 @@ let snakes = {
     },
     'Grass Snake': {
         species: 'Grass Snake',
-        imagePath: './images/grass-snake.jpg',
+        imagePath: '../images/grass-snake.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 3 feet',
         weight: '0.2 to 0.4 pounds',
@@ -165,7 +165,7 @@ let snakes = {
     },
     'Eastern Diamondback Rattlesnake': {
         species: 'Eastern Diamondback Rattlesnake',
-        imagePath: './images/eastern-diamondback.jpg',
+        imagePath: '../images/eastern-diamondback.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '3 to 6 feet',
         weight: '4 to 10 pounds',
@@ -174,7 +174,7 @@ let snakes = {
     },
     'Western Diamondback Rattlesnake': {
         species: 'Western Diamondback Rattlesnake',
-        imagePath: './images/western-diamonback.jpg',
+        imagePath: '../images/western-diamonback.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '3 to 5 feet',
         weight: '4 to 10 pounds',
@@ -183,7 +183,7 @@ let snakes = {
     },
     'Coral Snake': {
         species: 'Coral Snake',
-        imagePath: './images/coral-snake.jpg',
+        imagePath: '../images/coral-snake.jpg',
         colors: 'Red, yellow, black',
         length: '2 to 4 feet',
         weight: '0.2 to 0.4 pounds',
@@ -192,7 +192,7 @@ let snakes = {
     },
     'Copperhead': {
         species: 'Copperhead',
-        imagePath: './images/copperhead.jpg',
+        imagePath: '../images/copperhead.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 4 feet',
         weight: '2 to 4 pounds',
@@ -201,7 +201,7 @@ let snakes = {
     },
     'Cottonmouth': {
         species: 'Cottonmouth',
-        imagePath: './images/cottonmouth.png',
+        imagePath: '../images/cottonmouth.png',
         colors: 'Brown, grey, yellow, black',
         length: '2 to 4 feet',
         weight: '2 to 4 pounds',
@@ -210,7 +210,7 @@ let snakes = {
     },
     'Bushmaster': {
         species: 'Bushmaster',
-        imagePath: './images/bushmaster.jpg',
+        imagePath: '../images/bushmaster.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '6 to 12 feet',
         weight: '6 to 15 pounds',
@@ -219,7 +219,7 @@ let snakes = {
     },
     'Yellow Anaconda': {
         species: 'Yellow Anaconda',
-        imagePath: './images/yellow-anaconda.jpg',
+        imagePath: '../images/yellow-anaconda.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '10 to 12 feet',
         weight: '30 to 40 pounds',
@@ -229,7 +229,7 @@ let snakes = {
     },
     'Green Anaconda': {
         species: 'Green Anaconda',
-        imagePath: './images/green-anaconda.jpg',
+        imagePath: '../images/green-anaconda.jpg',
         colors: 'Green, yellow, black',
         length: '15 to 20 feet',
         weight: '200 to 300 pounds',
@@ -238,7 +238,7 @@ let snakes = {
     },
     'Coastal Taipan': {
         species: 'Coastal Taipan',
-        imagePath: '/./images/coastal-taipan.jpg',
+        imagePath: '../images/coastal-taipan.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '6 to 8 feet',
         weight: '5 to 10 pounds',
@@ -248,7 +248,7 @@ let snakes = {
     },
     'Death Adder': {
         species: 'Death Adder',
-        imagePath: '/./images/death-adder.jpg',
+        imagePath: '../images/death-adder.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '3 to 4 feet',
         weight: '1 to 2 pounds',
@@ -257,7 +257,7 @@ let snakes = {
     },
     'Inland Taipan': {
         species: 'Inland Taipan',
-        imagePath: './images/inland-taipan.jpg',
+        imagePath: '../images/inland-taipan.jpg',
         colors: 'Brown, grey, yellow, black',
         length: '6 to 8 feet',
         weight: '5 to 10 pounds',
@@ -266,7 +266,7 @@ let snakes = {
     },
     'Red-bellied Black Snake': {
         species: 'Red-bellied Black Snake',
-        imagePath: '/./images/red-bellied-black-snake.jpg',
+        imagePath: '../images/red-bellied-black-snake.jpg',
         colors: 'Black, red, yellow',
         length: '3 to 5 feet',
         weight: '2 to 3 pounds',
